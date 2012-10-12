@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://gouf.github.com/atom.xml" rel="self"/>
   <link href="http://gouf.github.com/"/>
-  <updated>2012-10-13T02:35:32+09:00</updated>
+  <updated>2012-10-13T03:55:49+09:00</updated>
   <id>http://gouf.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,83 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octpress を試してみた]]></title>
+    <link href="http://gouf.github.com/blog/2012/10/13/octpress/"/>
+    <updated>2012-10-13T03:36:00+09:00</updated>
+    <id>http://gouf.github.com/blog/2012/10/13/octpress</id>
+    <content type="html"><![CDATA[<h1>GitHub のPages, Octpressを試してみた。</h1>
+
+<p>[username].github.com ってアドレスで自分用のページを作れるらしいって聞いたので、さっそく試してみることに。</p>
+
+<p>(いまのところ、ただの作業記録なので、詳細はリンクを参照してください。)
+<img src="http://gyazo.com/3fda1d0028861483c1ed4a58ac1a6f13.png" alt="最初のページ" /></p>
+
+<h2>概要</h2>
+
+<ul>
+<li>GitHub の提供するPages てサービスを利用して、自分用のページを作ってみた。</li>
+<li>Octopress を利用して、Blog を書いていけるように。</li>
+</ul>
+
+
+<h2>ブログを表示させるまで</h2>
+
+<ol>
+<li>GitHub Pages の用意。</li>
+<li>Octopress のクローニング(git clone)</li>
+<li>Octopress のセットアップ(rake install)</li>
+<li>ためしにポストを作成(rake new_post[&#8216;test&#8217;])</li>
+<li>適当なエディタでMarkdownを記述(vim source/_posts/YYYY-MM-DD-test.markdown)</li>
+<li>静的ページに変換・生成して、デプロイ(rake gen_deploy)</li>
+</ol>
+
+
+<h2>Permission Denied ???</h2>
+
+<p><img src="http://gyazo.com/73340b50de97fb67ff0648d68a37bf7e.png" alt="Publishing generated _deploy website" /></p>
+
+<p>調べてみたら、git用の鍵じゃなくって、~/ssh/id_rsaの方を使ってたみたいなので、~/.ssh/config に設定を記述して、正しく通信できるようにしとく。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Host github.com
+</span><span class='line'>  User git
+</span><span class='line'>    Port 22
+</span><span class='line'>      Hostname github.com
+</span><span class='line'>        IdentityFile ~/.ssh/github_id_rsa
+</span><span class='line'>        TCPKeepAlive yes
+</span><span class='line'>        IdentitiesOnly yes</span></code></pre></td></tr></table></div></figure>
+
+
+<p>&#8220;&#8220;</p>
+
+<h2>リンク</h2>
+
+<ul>
+<li><a href="http://pages.github.com/">GitHub Pages</a></li>
+<li><a href="http://octopress.org/">Octopress</a></li>
+<li><a href="http://d.hatena.ne.jp/a666666/20081219/1229696368">github に登録する公開鍵ファイルを id_rsa.pub じゃない名前で使いたい→ ~/.ssh/config で解決 - 刺身☆ブーメランのはてなダイアリー</a></li>
+</ul>
+
+
+<h4>少し気になった・わかんないこと・蛇足</h4>
+
+<ul>
+<li>ssh + 公開鍵暗号で暗号化された通信、安全にファイルのやり取りができるけれど、sshを制御する設定ファイルって何があって、どんな設定ができるの？ (~/ssh/config , ~/ssh/known_hosts など)</li>
+<li>デフォルトの状態でも見た目はしっかりしてるけど、タイトルを変えたり、CSSの設定を変えたりする方法。これは、たぶん公式ドキュメントを参照かな</li>
+<li>カテゴリやタイトルの設定の上に本文を書いていくものだと思ってたけど、正しくは下だった&#8230;
++<img src="http://gyazo.com/e58d7e272dabe06ea1c7bd331d22de73.png?1350066634" alt="設定" /></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[test]]></title>
