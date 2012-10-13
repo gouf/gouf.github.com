@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: LiveReload | My Octopress Blog]]></title>
-  <link href="gouf.github.com/blog/categories/livereload/atom.xml" rel="self"/>
-  <link href="gouf.github.com/"/>
-  <updated>2012-10-13T19:43:28+09:00</updated>
-  <id>gouf.github.com/</id>
+  <link href="http://gouf.github.com/blog/categories/livereload/atom.xml" rel="self"/>
+  <link href="http://gouf.github.com/"/>
+  <updated>2012-10-13T20:29:21+09:00</updated>
+  <id>http://gouf.github.com/</id>
   <author>
     <name><![CDATA[gouf]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[LiveReloadで簡単プレビュー]]></title>
-    <link href="gouf.github.com/blog/2012/10/13/auto-reload/"/>
+    <link href="http://gouf.github.com/blog/2012/10/13/auto-reload/"/>
     <updated>2012-10-13T15:34:00+09:00</updated>
-    <id>gouf.github.com/blog/2012/10/13/auto-reload</id>
+    <id>http://gouf.github.com/blog/2012/10/13/auto-reload</id>
     <content type="html"><![CDATA[<h2>ブログ編集の自動プレビュー</h2>
 
 <p>Octopress のwatch 機能とWebRick に加えて、LiveReload を利用することで、編集とプレビューを簡単にする。</p>
