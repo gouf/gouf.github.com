@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: octopress | My Octopress Blog]]></title>
+  <title><![CDATA[Category: octopress | gouf.github.com]]></title>
   <link href="http://gouf.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://gouf.github.com/"/>
-  <updated>2012-10-13T20:29:21+09:00</updated>
+  <updated>2012-10-13T23:24:19+09:00</updated>
   <id>http://gouf.github.com/</id>
   <author>
     <name><![CDATA[gouf]]></name>
