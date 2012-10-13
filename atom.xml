@@ -2,34 +2,142 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://gouf.github.com/atom.xml" rel="self"/>
-  <link href="http://gouf.github.com/"/>
-  <updated>2012-10-13T03:55:49+09:00</updated>
-  <id>http://gouf.github.com/</id>
+  <link href="gouf.github.com/atom.xml" rel="self"/>
+  <link href="gouf.github.com/"/>
+  <updated>2012-10-13T18:25:44+09:00</updated>
+  <id>gouf.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[gouf]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
+    <title type="html"><![CDATA[LiveReloadで簡単プレビュー]]></title>
+    <link href="gouf.github.com/blog/2012/10/13/auto-reload/"/>
+    <updated>2012-10-13T15:34:00+09:00</updated>
+    <id>gouf.github.com/blog/2012/10/13/auto-reload</id>
+    <content type="html"><![CDATA[<h2>ブログ編集の自動プレビュー</h2>
+
+<p>Octopress のwatch 機能とWebRick に加えて、LiveReload を利用することで、編集とプレビューを簡単にする。</p>
+
+<h2>編集とプレビューのサイクル</h2>
+
+<p>新しく記事を生成して、編集して、気になったらプレビューして&#8230;といったサイクルで編集してたけど、LiveReload をつかえば より簡単にこのサイクルを回せるんじゃないかって思った。</p>
+
+<h3>LiveReload</h3>
+
+<p>Webブラウザと連携して、ローカルファイルの更新があった時に、ブラウザのページを、自動でリロードしてくれる。</p>
+
+<p>Mac 版とWindows 版と、あとLinux 版がある。
+いまMac 使ってるから、Mac で話をすすめるよ。</p>
+
+<p><a href="http://livereload.com/" title="LiveReload">公式サイト</a>からダウンロードしてインストールして、Octopress のフォルダを監視下に置けばおっけ。</p>
+
+<h3>rake watch コマンド</h3>
+
+<p>Octopress にはファイル変更を監視して、自動的にrake generate してくれる、rake watch コマンドが用意されている。
+動かしてみるとこんな感じ。</p>
+
+<p><img src="http://gyazo.com/89fcbaca3dba39a451a7c00416384208.png" alt="rake watchコマンド" /></p>
+
+<h3>rake preview コマンド</h3>
+
+<p>そいで、rake preview を叩くと、WebRick が起動して、<a href="http://localhost:4000">http://localhost:4000</a>でブログのプレビューが出来る。
+rake preview にはrake watch の機能もあるので、プレビューしながら編集する場合は、こっちのコマンドを使う。</p>
+
+<h3>おわり。</h3>
+
+<p>rake preview + LiveReload でラクな編集作業をしましょ。</p>
+
+<h2>捕捉</h2>
+
+<p>Octopress もLiveReload もファイルの変更を検知したタイミングで動いてるから、もしかするとページの変換処理よりリロードのほうが早くなってしまうかもしれない。</p>
+
+<p>そんなときは、LiveReload の設定で、リロードのタイミングを遅らせるといいかも。</p>
+
+<p><img src="http://gyazo.com/16dc2c9a32f44f49810d3986a0fc775c.png" alt="LiveReload 設定" /></p>
+
+<h2>リンク</h2>
+
+<ul>
+<li><a href="http://livereload.com/">LiveReload</a></li>
+</ul>
+
+
+<h2>蛇足</h2>
+
+<ul>
+<li>rake generate が失敗すると思ったら レイアウトやタイトルを設定するトコの書式に誤りがあった。
+タイトルを<code>"</code>で括ってるかとか、categories: のあとに半角スペースをつけてるかとか。すごく地味なミスだった。
+
+<ul>
+<li>(これだからYAMLはいやなんだ&#8230;!!)</li>
+</ul>
+</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress テーマの変更]]></title>
+    <link href="gouf.github.com/blog/2012/10/13/changes-theme/"/>
+    <updated>2012-10-13T14:53:00+09:00</updated>
+    <id>gouf.github.com/blog/2012/10/13/changes-theme</id>
+    <content type="html"><![CDATA[<h2>Octopress のテーマを変更してみた</h2>
+
+<p>初期テーマが気に入らなかったので、既存のよさそうなのを利用することに。</p>
+
+<h2>おおまかな手順</h2>
+
+<p>ぜんぶコンソールで。</p>
+
+<ol>
+<li>PCのOctopressプロジェクトフォルダに移動</li>
+<li><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">テーマ一覧ページ</a>から気に入ったものをお持ち帰り。(git clone)</li>
+<li>テーマをインストール(rake install[&#8216;THEME_NAME&#8217;])</li>
+<li>ページを生成(rake generate)</li>
+<li>忘れず公開(rake deploy)</li>
+</ol>
+
+
+<h2>リンク</h2>
+
+<ul>
+<li><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes" title="GitHub Wiki - Octopress">3rd Party Octopress Themes</a></li>
+<li><a href="http://zespia.tw/Octopress-Theme-Slash/" title="Theme Preview">Octopress-Theme-Slash</a></li>
+</ul>
+
+
+<h3>蛇足</h3>
+
+<ul>
+<li>そういえばカテゴリーの設定って[ ]で括ってカンマ区切りなのね</li>
+<li>テーマを切り替えたのはいいけれど、レイアウト変更とか細かな設定をまだ読んでないや</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Octpress を試してみた]]></title>
-    <link href="http://gouf.github.com/blog/2012/10/13/octpress/"/>
+    <link href="gouf.github.com/blog/2012/10/13/octpress/"/>
     <updated>2012-10-13T03:36:00+09:00</updated>
-    <id>http://gouf.github.com/blog/2012/10/13/octpress</id>
-    <content type="html"><![CDATA[<h1>GitHub のPages, Octpressを試してみた。</h1>
+    <id>gouf.github.com/blog/2012/10/13/octpress</id>
+    <content type="html"><![CDATA[<h2>GitHub のPages, ブログツール Octpressを試してみた。</h2>
 
 <p>[username].github.com ってアドレスで自分用のページを作れるらしいって聞いたので、さっそく試してみることに。</p>
 
-<p>(いまのところ、ただの作業記録なので、詳細はリンクを参照してください。)
-<img src="http://gyazo.com/3fda1d0028861483c1ed4a58ac1a6f13.png" alt="最初のページ" /></p>
+<p><img src="http://gyazo.com/3fda1d0028861483c1ed4a58ac1a6f13.png" alt="最初のページ" /></p>
 
 <h2>概要</h2>
 
 <ul>
-<li>GitHub の提供するPages てサービスを利用して、自分用のページを作ってみた。</li>
+<li>GitHub の提供するPages てサービスを利用して、自分用のページを公開。</li>
 <li>Octopress を利用して、Blog を書いていけるように。</li>
+<li>Markdown で書ける！！</li>
 </ul>
 
 
@@ -67,8 +175,6 @@
 </span><span class='line'>        IdentitiesOnly yes</span></code></pre></td></tr></table></div></figure>
 
 
-<p>&#8220;&#8220;</p>
-
 <h2>リンク</h2>
 
 <ul>
@@ -84,7 +190,11 @@
 <li>ssh + 公開鍵暗号で暗号化された通信、安全にファイルのやり取りができるけれど、sshを制御する設定ファイルって何があって、どんな設定ができるの？ (~/ssh/config , ~/ssh/known_hosts など)</li>
 <li>デフォルトの状態でも見た目はしっかりしてるけど、タイトルを変えたり、CSSの設定を変えたりする方法。これは、たぶん公式ドキュメントを参照かな</li>
 <li>カテゴリやタイトルの設定の上に本文を書いていくものだと思ってたけど、正しくは下だった&#8230;
-+<img src="http://gyazo.com/e58d7e272dabe06ea1c7bd331d22de73.png?1350066634" alt="設定" /></li>
+
+<ul>
+<li><img src="http://gyazo.com/e58d7e272dabe06ea1c7bd331d22de73.png?1350066634" alt="設定" /></li>
+</ul>
+</li>
 </ul>
 
 ]]></content>
@@ -92,9 +202,9 @@
   
   <entry>
     <title type="html"><![CDATA[test]]></title>
-    <link href="http://gouf.github.com/blog/2012/10/13/test/"/>
+    <link href="gouf.github.com/blog/2012/10/13/test/"/>
     <updated>2012-10-13T00:30:00+09:00</updated>
-    <id>http://gouf.github.com/blog/2012/10/13/test</id>
+    <id>gouf.github.com/blog/2012/10/13/test</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>

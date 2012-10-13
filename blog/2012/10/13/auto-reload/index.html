@@ -1,0 +1,194 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LiveReloadで簡単プレビュー - My Octopress Blog</title>
+	<meta name="author" content="gouf">
+
+	
+	<meta name="description" content="ブログ編集の自動プレビュー Octopress のwatch 機能とWebRick に加えて、LiveReload を利用することで、編集とプレビューを簡単にする。 編集とプレビューのサイクル 新しく記事を生成して、編集して、気になったらプレビューして&#8230;といったサイクルで編集してたけど &hellip;">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+</head>
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">My Octopress Blog</a></h1>
+<nav id="main-nav"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:gouf.github.com">
+			</form>
+		</div>
+	</div>
+</nav>
+<nav id="sub-nav" class="alignright">
+	<div class="social">
+		
+		
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+	<form class="search" action="google.com/search" method="get">
+		<input class="alignright" type="text" name="q" results="0">
+		<input type="hidden" name="q" value="site:gouf.github.com">
+	</form>
+</nav>
+
+</header>
+	
+		
+	
+	<div id="content" class="inner"><article class="post">
+	<h1 class="title">LiveReloadで簡単プレビュー</h1>
+	<div class="entry-content"><h2>ブログ編集の自動プレビュー</h2>
+
+<p>Octopress のwatch 機能とWebRick に加えて、LiveReload を利用することで、編集とプレビューを簡単にする。</p>
+
+<h2>編集とプレビューのサイクル</h2>
+
+<p>新しく記事を生成して、編集して、気になったらプレビューして&#8230;といったサイクルで編集してたけど、LiveReload をつかえば より簡単にこのサイクルを回せるんじゃないかって思った。</p>
+
+<h3>LiveReload</h3>
+
+<p>Webブラウザと連携して、ローカルファイルの更新があった時に、ブラウザのページを、自動でリロードしてくれる。</p>
+
+<p>Mac 版とWindows 版と、あとLinux 版がある。
+いまMac 使ってるから、Mac で話をすすめるよ。</p>
+
+<p><a href="http://livereload.com/" title="LiveReload">公式サイト</a>からダウンロードしてインストールして、Octopress のフォルダを監視下に置けばおっけ。</p>
+
+<h3>rake watch コマンド</h3>
+
+<p>Octopress にはファイル変更を監視して、自動的にrake generate してくれる、rake watch コマンドが用意されている。
+動かしてみるとこんな感じ。</p>
+
+<p><img src="http://gyazo.com/89fcbaca3dba39a451a7c00416384208.png" alt="rake watchコマンド" /></p>
+
+<h3>rake preview コマンド</h3>
+
+<p>そいで、rake preview を叩くと、WebRick が起動して、<a href="http://localhost:4000">http://localhost:4000</a>でブログのプレビューが出来る。
+rake preview にはrake watch の機能もあるので、プレビューしながら編集する場合は、こっちのコマンドを使う。</p>
+
+<h3>おわり。</h3>
+
+<p>rake preview + LiveReload でラクな編集作業をしましょ。</p>
+
+<h2>捕捉</h2>
+
+<p>Octopress もLiveReload もファイルの変更を検知したタイミングで動いてるから、もしかするとページの変換処理よりリロードのほうが早くなってしまうかもしれない。</p>
+
+<p>そんなときは、LiveReload の設定で、リロードのタイミングを遅らせるといいかも。</p>
+
+<p><img src="http://gyazo.com/16dc2c9a32f44f49810d3986a0fc775c.png" alt="LiveReload 設定" /></p>
+
+<h2>リンク</h2>
+
+<ul>
+<li><a href="http://livereload.com/">LiveReload</a></li>
+</ul>
+
+
+<h2>蛇足</h2>
+
+<ul>
+<li>rake generate が失敗すると思ったら レイアウトやタイトルを設定するトコの書式に誤りがあった。
+タイトルを<code>"</code>で括ってるかとか、categories: のあとに半角スペースをつけてるかとか。すごく地味なミスだった。
+
+<ul>
+<li>(これだからYAMLはいやなんだ&#8230;!!)</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-13T15:34:00+09:00" pubdate data-updated="true">Oct 13<span>th</span>, 2012</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/livereload/'>LiveReload</a>, <a class='category' href='/blog/categories/octopress/'>Octopress</a>
+
+
+</div>
+	
+</div></article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+	<footer id="footer" class="inner">Copyright &copy; 2012
+
+    gouf
+
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+
+
+</body>
+</html>

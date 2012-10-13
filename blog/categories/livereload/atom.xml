@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: LiveReload | My Octopress Blog]]></title>
+  <link href="gouf.github.com/blog/categories/livereload/atom.xml" rel="self"/>
+  <link href="gouf.github.com/"/>
+  <updated>2012-10-13T18:25:44+09:00</updated>
+  <id>gouf.github.com/</id>
+  <author>
+    <name><![CDATA[gouf]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[LiveReloadで簡単プレビュー]]></title>
+    <link href="gouf.github.com/blog/2012/10/13/auto-reload/"/>
+    <updated>2012-10-13T15:34:00+09:00</updated>
+    <id>gouf.github.com/blog/2012/10/13/auto-reload</id>
+    <content type="html"><![CDATA[<h2>ブログ編集の自動プレビュー</h2>
+
+<p>Octopress のwatch 機能とWebRick に加えて、LiveReload を利用することで、編集とプレビューを簡単にする。</p>
+
+<h2>編集とプレビューのサイクル</h2>
+
+<p>新しく記事を生成して、編集して、気になったらプレビューして...といったサイクルで編集してたけど、LiveReload をつかえば より簡単にこのサイクルを回せるんじゃないかって思った。</p>
+
+<h3>LiveReload</h3>
+
+<p>Webブラウザと連携して、ローカルファイルの更新があった時に、ブラウザのページを、自動でリロードしてくれる。</p>
+
+<p>Mac 版とWindows 版と、あとLinux 版がある。
+いまMac 使ってるから、Mac で話をすすめるよ。</p>
+
+<p><a href="http://livereload.com/" title="LiveReload">公式サイト</a>からダウンロードしてインストールして、Octopress のフォルダを監視下に置けばおっけ。</p>
+
+<h3>rake watch コマンド</h3>
+
+<p>Octopress にはファイル変更を監視して、自動的にrake generate してくれる、rake watch コマンドが用意されている。
+動かしてみるとこんな感じ。</p>
+
+<p><img src="http://gyazo.com/89fcbaca3dba39a451a7c00416384208.png" alt="rake watchコマンド" /></p>
+
+<h3>rake preview コマンド</h3>
+
+<p>そいで、rake preview を叩くと、WebRick が起動して、<a href="http://localhost:4000">http://localhost:4000</a>でブログのプレビューが出来る。
+rake preview にはrake watch の機能もあるので、プレビューしながら編集する場合は、こっちのコマンドを使う。</p>
+
+<h3>おわり。</h3>
+
+<p>rake preview + LiveReload でラクな編集作業をしましょ。</p>
+
+<h2>捕捉</h2>
+
+<p>Octopress もLiveReload もファイルの変更を検知したタイミングで動いてるから、もしかするとページの変換処理よりリロードのほうが早くなってしまうかもしれない。</p>
+
+<p>そんなときは、LiveReload の設定で、リロードのタイミングを遅らせるといいかも。</p>
+
+<p><img src="http://gyazo.com/16dc2c9a32f44f49810d3986a0fc775c.png" alt="LiveReload 設定" /></p>
+
+<h2>リンク</h2>
+
+<ul>
+<li><a href="http://livereload.com/">LiveReload</a></li>
+</ul>
+
+
+<h2>蛇足</h2>
+
+<ul>
+<li>rake generate が失敗すると思ったら レイアウトやタイトルを設定するトコの書式に誤りがあった。
+タイトルを<code>"</code>で括ってるかとか、categories: のあとに半角スペースをつけてるかとか。すごく地味なミスだった。
+
+<ul>
+<li>(これだからYAMLはいやなんだ...!!)</li>
+</ul>
+</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,19 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://gouf.github.com/blog/2012/10/13/test/</loc>
-        <lastmod>2012-10-13T00:37:06+09:00</lastmod>
+        <loc>gouf.github.com/blog/2012/10/13/test/</loc>
+        <lastmod>2012-10-13T17:26:36+09:00</lastmod>
     </url>
     <url>
-        <loc>http://gouf.github.com/blog/2012/10/13/octpress/</loc>
-        <lastmod>2012-10-13T03:55:39+09:00</lastmod>
+        <loc>gouf.github.com/blog/2012/10/13/octpress/</loc>
+        <lastmod>2012-10-13T17:26:36+09:00</lastmod>
     </url>
     <url>
-        <loc>http://gouf.github.com/blog/archives/</loc>
-        <lastmod>2012-10-13T03:55:39+09:00</lastmod>
+        <loc>gouf.github.com/blog/2012/10/13/changes-theme/</loc>
+        <lastmod>2012-10-13T17:26:36+09:00</lastmod>
     </url>
     <url>
-        <loc>http://gouf.github.com/</loc>
-        <lastmod>2012-10-13T03:55:39+09:00</lastmod>
+        <loc>gouf.github.com/blog/2012/10/13/auto-reload/</loc>
+        <lastmod>2012-10-13T18:25:43+09:00</lastmod>
+    </url>
+    <url>
+        <loc>gouf.github.com/blog/archives/</loc>
+        <lastmod>2012-10-13T18:25:43+09:00</lastmod>
+    </url>
+    <url>
+        <loc>gouf.github.com/</loc>
+        <lastmod>2012-10-13T18:25:43+09:00</lastmod>
     </url>
 </urlset>
