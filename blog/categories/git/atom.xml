@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: git | My Octopress Blog]]></title>
+  <link href="http://gouf.github.io/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://gouf.github.io/"/>
+  <updated>2014-03-06T23:34:46+09:00</updated>
+  <id>http://gouf.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octpress をアップデートした]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/06/upgrade-octpress/"/>
+    <updated>2014-03-06T23:00:37+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/06/upgrade-octpress</id>
+    <content type="html"><![CDATA[<p>記事としての内容とか、実際の作業とかは以下のリンクまま。</p>
+
+<ul>
+<li><a href="http://blog.glidenote.com/blog/2014/02/14/octopress-update/">Octopressをアップデートした &ndash; Glide Note &ndash; グライドノート</a></li>
+</ul>
+
+
+<p>git remote 叩いてもoctopress とかなかったので
+git remote add してからgit fetch してみた。</p>
+
+<p>こういうときにmerge をするのね。</p>
+
+<h2>バージョン違い</h2>
+
+<p>ローカルにインストールされているrake のバージョンが<br />
+Octopress のmaster ブランチで利用されているものより新しかったので<br />
+ただrake とコマンドを叩いただけでは動いてくれなかった<br />
+エラーメッセージのヒントにしたがってbundle exec を頭につけることで対応</p>
+
+<h3>蛇足</h3>
+
+<p>久しぶりの更新。というよりは忘れ去っていた。<br />
+当時は今よりもなお わからないこと塗れだったのだろうけど<br />
+Octopress のセットアップと最初のポストするまでくらいは書いて欲しいよね<br />
+カテゴリの付け方とか、記事の書き方・プレビューとか確認するの時間かかったよ&hellip;</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://octopress.org/docs/">Octopress Documentation</a></li>
+<li><a href="http://octopress.org/docs/blogging/">Octopress Documentation &ndash; Blogging Basics</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
