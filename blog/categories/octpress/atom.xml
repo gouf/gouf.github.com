@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octpress | My Octopress Blog]]></title>
+  <link href="http://gouf.github.io/blog/categories/octpress/atom.xml" rel="self"/>
+  <link href="http://gouf.github.io/"/>
+  <updated>2014-03-07T10:47:23+09:00</updated>
+  <id>http://gouf.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octpress Themes]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/06/octpress-themes/"/>
+    <updated>2014-03-06T23:54:46+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/06/octpress-themes</id>
+    <content type="html"><![CDATA[<h2>Octpress のテーマを変更する</h2>
+
+<p>デフォルトのテーマがあんまり好きじゃないので、よさそなのに変える。</p>
+
+<p><code>
+$ cd octopress
+$ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/slash
+$ rake install['slash']
+$ rake generate
+</code></p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://zespia.tw/Octopress-Theme-Slash/">Slash — a minimal theme for Octopress</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[禁断のForce Push]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/06/forbidden-force-push/"/>
+    <updated>2014-03-06T23:43:33+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/06/forbidden-force-push</id>
+    <content type="html"><![CDATA[<p>結果としてはリポジトリのデータも、歴史も全て無かったことになった</p>
+
+<p><code>
+! [rejected]        master -&gt; master (non-fast-forward)
+</code></p>
+
+<p>rake deploy でエラーが出てpush できない。
+<del>何も考えずに</del>以下の解決方法、"+&ldquo; をつけるやつ、試しちゃった。</p>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress">rake gen_deploy rejected in Octopress &ndash; Stack Overflow</a></li>
+</ul>
+
+
+<p>よいこのみんなは 真似しちゃダメよ。ぜったい。<br />
+pull したりmerge したり 正攻法で攻めましょうね。</p>
+
+<p>ちょうどいい機会だった。ほんとに。<br />
+泣いてない。</p>
+
+<p>過去の記事も歴史もまっさらにして<br />
+さあ、これから更新していきましょう</p>
+
+<p>(これをもし お仕事で やらかしたらと思うと&hellip;)</p>
+]]></content>
+  </entry>
+  
+</feed>

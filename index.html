@@ -7,8 +7,13 @@
 	<meta name="author" content="Your Name">
 
 	
-	<meta name="description" content="記事としての内容とか、実際の作業とかは以下のリンクまま。 Octopressをアップデートした &ndash; Glide Note &ndash; グライドノート git remote 叩いてもoctopress とかなかったので
-git remote add してからgit fetch &hellip;">
+	<meta name="description" content="セットアップ後 1
+2
+3
+4
+5
+s &lt;bookmark_name&gt; - Saves the current directory as "bookmark_name"
+g &lt;bookmark_name&gt; - Goes (cd) to the directory &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -53,11 +58,15 @@ git remote add してからgit fetch &hellip;">
 		
 		
 		
+		<a class="twitter" href="http://twitter.com/innocent_zero" title="Twitter">Twitter</a>
+		
 		
     
 		
 		
 		
+		
+		<a class="delicious" href="http://delicious.com/innocent.zero" title="Delicious">Delicious</a>
 		
 		
 		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
@@ -75,6 +84,199 @@ git remote add してからgit fetch &hellip;">
 		
 	
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/03/07/bashmarks/">
+		
+			Bashmarks</a>
+	</h2>
+	<div class="entry-content">
+		<h2>セットアップ後</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>s &lt;bookmark_name&gt; - Saves the current directory as "bookmark_name"
+</span><span class='line'>g &lt;bookmark_name&gt; - Goes (cd) to the directory associated with "bookmark_name"
+</span><span class='line'>p &lt;bookmark_name&gt; - Prints the directory associated with "bookmark_name"
+</span><span class='line'>d &lt;bookmark_name&gt; - Deletes the bookmark
+</span><span class='line'>l                 - Lists all available bookmarks</span></code></pre></td></tr></table></div></figure>
+
+
+<p>上のコマンドが追加されて、ディレクトリをブックマークできるようになる<br />
+pushd/popd よりべんり。</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="https://github.com/huyng/bashmarks">huyng/bashmarks &ndash; GitHub</a></li>
+</ul>
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-07T10:21:08+09:00" pubdate data-updated="true">Mar 7<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/bash/'>bash</a>, <a class='category' href='/blog/categories/linux/'>linux</a>
+
+
+</div>
+	
+	<div class="comments"><a href="/blog/2014/03/07/bashmarks/#disqus_thread">Comments</a></div>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/03/06/octpress-themes/">
+		
+			Octpress Themes</a>
+	</h2>
+	<div class="entry-content">
+		<h2>Octpress のテーマを変更する</h2>
+
+<p>デフォルトのテーマがあんまり好きじゃないので、よさそなのに変える。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd octopress
+</span><span class='line'>$ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/slash
+</span><span class='line'>$ rake install['slash']
+</span><span class='line'>$ rake generate</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://zespia.tw/Octopress-Theme-Slash/">Slash — a minimal theme for Octopress</a></li>
+</ul>
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-06T23:54:46+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/octpress/'>Octpress</a>
+
+
+</div>
+	
+	<div class="comments"><a href="/blog/2014/03/06/octpress-themes/#disqus_thread">Comments</a></div>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/03/06/forbidden-force-push/">
+		
+			禁断のForce Push</a>
+	</h2>
+	<div class="entry-content">
+		<p>結果としてはリポジトリのデータも、歴史も全て無かったことになった</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>! [rejected]        master -&gt; master (non-fast-forward)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>rake deploy でエラーが出てpush できない。
+<del>何も考えずに</del>以下の解決方法、&#8221;+&ldquo; をつけるやつ、試しちゃった。</p>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress">rake gen_deploy rejected in Octopress &ndash; Stack Overflow</a></li>
+</ul>
+
+
+<p>よいこのみんなは 真似しちゃダメよ。ぜったい。<br />
+pull したりmerge したり 正攻法で攻めましょうね。</p>
+
+<p>ちょうどいい機会だった。ほんとに。<br />
+泣いてない。</p>
+
+<p>過去の記事も歴史もまっさらにして<br />
+さあ、これから更新していきましょう</p>
+
+<p>(これをもし お仕事で やらかしたらと思うと&hellip;)</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-06T23:43:33+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/octpress/'>Octpress</a>, <a class='category' href='/blog/categories/git/'>git</a>
+
+
+</div>
+	
+	<div class="comments"><a href="/blog/2014/03/06/forbidden-force-push/#disqus_thread">Comments</a></div>
+	
+</div>
+</article>
 
 
     <article class="post">
@@ -146,6 +348,8 @@ Octopress のセットアップと最初のポストするまでくらいは書�
 
 </div>
 	
+	<div class="comments"><a href="/blog/2014/03/06/upgrade-octpress/#disqus_thread">Comments</a></div>
+	
 </div>
 </article>
 
@@ -168,7 +372,32 @@ Octopress のセットアップと最初のポストするまでくらいは書�
 </script> <!-- Delete or comment this line to disable Fancybox -->
 
 
+<script type="text/javascript">
+      var disqus_shortname = 'innocent_zero';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//go.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-35556958-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
 
 
 

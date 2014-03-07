@@ -3,12 +3,16 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Octpress をアップデートした - My Octopress Blog</title>
+	<title>Octpress Themes - My Octopress Blog</title>
 	<meta name="author" content="Your Name">
 
 	
-	<meta name="description" content="記事としての内容とか、実際の作業とかは以下のリンクまま。 Octopressをアップデートした &ndash; Glide Note &ndash; グライドノート git remote 叩いてもoctopress とかなかったので
-git remote add してからgit fetch &hellip;">
+	<meta name="description" content="Octpress のテーマを変更する デフォルトのテーマがあんまり好きじゃないので、よさそなのに変える。 1
+2
+3
+4
+$ cd octopress
+$ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/ &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -79,38 +83,25 @@ git remote add してからgit fetch &hellip;">
 		
 	
 	<div id="content" class="inner"><article class="post">
-	<h2 class="title">Octpress をアップデートした</h2>
-	<div class="entry-content"><p>記事としての内容とか、実際の作業とかは以下のリンクまま。</p>
+	<h2 class="title">Octpress Themes</h2>
+	<div class="entry-content"><h2>Octpress のテーマを変更する</h2>
 
-<ul>
-<li><a href="http://blog.glidenote.com/blog/2014/02/14/octopress-update/">Octopressをアップデートした &ndash; Glide Note &ndash; グライドノート</a></li>
-</ul>
+<p>デフォルトのテーマがあんまり好きじゃないので、よさそなのに変える。</p>
 
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd octopress
+</span><span class='line'>$ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/slash
+</span><span class='line'>$ rake install['slash']
+</span><span class='line'>$ rake generate</span></code></pre></td></tr></table></div></figure>
 
-<p>git remote 叩いてもoctopress とかなかったので
-git remote add してからgit fetch してみた。</p>
-
-<p>こういうときにmerge をするのね。</p>
-
-<h2>バージョン違い</h2>
-
-<p>ローカルにインストールされているrake のバージョンが<br />
-Octopress のmaster ブランチで利用されているものより新しかったので<br />
-ただrake とコマンドを叩いただけでは動いてくれなかった<br />
-エラーメッセージのヒントにしたがってbundle exec を頭につけることで対応</p>
-
-<h3>蛇足</h3>
-
-<p>久しぶりの更新。というよりは忘れ去っていた。<br />
-当時は今よりもなお わからないこと塗れだったのだろうけど<br />
-Octopress のセットアップと最初のポストするまでくらいは書いて欲しいよね<br />
-カテゴリの付け方とか、記事の書き方・プレビューとか確認するの時間かかったよ&hellip;</p>
 
 <h2>Link</h2>
 
 <ul>
-<li><a href="http://octopress.org/docs/">Octopress Documentation</a></li>
-<li><a href="http://octopress.org/docs/blogging/">Octopress Documentation &ndash; Blogging Basics</a></li>
+<li><a href="http://zespia.tw/Octopress-Theme-Slash/">Slash — a minimal theme for Octopress</a></li>
 </ul>
 
 </div>
@@ -129,11 +120,11 @@ Octopress のセットアップと最初のポストするまでくらいは書�
   
 
 
-<time datetime="2014-03-06T23:00:37+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2014</time></div>
+<time datetime="2014-03-06T23:54:46+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2014</time></div>
 	<div class="tags">
 
 
-	<a class='category' href='/blog/categories/octopress/'>Octopress</a>, <a class='category' href='/blog/categories/git/'>git</a>
+	<a class='category' href='/blog/categories/octpress/'>Octpress</a>
 
 
 </div>
@@ -186,8 +177,8 @@ Octopress のセットアップと最初のポストするまでくらいは書�
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://gouf.github.io/blog/2014/03/06/upgrade-octpress/';
-        var disqus_url = 'http://gouf.github.io/blog/2014/03/06/upgrade-octpress/';
+        var disqus_identifier = 'http://gouf.github.io/blog/2014/03/06/octpress-themes/';
+        var disqus_url = 'http://gouf.github.io/blog/2014/03/06/octpress-themes/';
         var disqus_script = 'embed.js';
       
     (function () {
