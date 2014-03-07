@@ -17,8 +17,12 @@
         <lastmod>2014-03-07T10:31:23+09:00</lastmod>
     </url>
     <url>
+        <loc>http://gouf.github.io/blog/2014/03/07/flog/</loc>
+        <lastmod>2014-03-07T14:21:31+09:00</lastmod>
+    </url>
+    <url>
         <loc>http://gouf.github.io/</loc>
-        <lastmod>2014-03-07T10:31:23+09:00</lastmod>
+        <lastmod>2014-03-07T14:21:31+09:00</lastmod>
     </url>
     <url>
         <loc>http://gouf.github.io/robots.txt</loc>
@@ -26,6 +30,6 @@
     </url>
     <url>
         <loc>http://gouf.github.io/blog/archives/</loc>
-        <lastmod>2014-03-07T10:31:23+09:00</lastmod>
+        <lastmod>2014-03-07T14:21:31+09:00</lastmod>
     </url>
 </urlset>

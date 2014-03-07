@@ -3,12 +3,17 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Octpress をアップデートした - My Octopress Blog</title>
+	<title>コードの複雑度を測る - My Octopress Blog</title>
 	<meta name="author" content="Gou Furuya">
 
 	
-	<meta name="description" content="記事としての内容とか、実際の作業とかは以下のリンクまま。 Octopressをアップデートした &ndash; Glide Note &ndash; グライドノート git remote 叩いてもoctopress とかなかったので
-git remote add してからgit fetch &hellip;">
+	<meta name="description" content="1
+puts &#39;Hello Flog!&#39; たとえば、このコードを計測してもらうとこんなかんじの出力をしてくれる 1
+2
+3
+4
+5
+$flog code.rb 1.0: flog total 1.0: flog/method average 1.0: main#none &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -81,38 +86,53 @@ git remote add してからgit fetch &hellip;">
 		
 	
 	<div id="content" class="inner"><article class="post">
-	<h2 class="title">Octpress をアップデートした</h2>
-	<div class="entry-content"><p>記事としての内容とか、実際の作業とかは以下のリンクまま。</p>
+	<h2 class="title">コードの複雑度を測る</h2>
+	<div class="entry-content"><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">puts</span> <span class="s1">&#39;Hello Flog!&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>たとえば、このコードを計測してもらうとこんなかんじの出力をしてくれる</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>$flog code.rb
+</span><span class='line'>     1.0: flog total
+</span><span class='line'>     1.0: flog/method average
+</span><span class='line'>
+</span><span class='line'>     1.0: main#none
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>数値が高いほど読みづらい複雑なコードで、シンプルなコードだと低い数値が出る。</p>
 
 <ul>
-<li><a href="http://blog.glidenote.com/blog/2014/02/14/octopress-update/">Octopressをアップデートした &ndash; Glide Note &ndash; グライドノート</a></li>
+<li><a href="https://gist.github.com/gouf/8432898">gouf/8432898 &ndash; Gist</a></li>
 </ul>
 
 
-<p>git remote 叩いてもoctopress とかなかったので
-git remote add してからgit fetch してみた。</p>
+<p>みたいな ひどいコードだと<br />
+Total 189.9 っていう高めの数値が出る。<br />
+(そういえば別の言語で測る機会があって 数値が４ケタに届きそうなのを見た憶えが)</p>
 
-<p>こういうときにmerge をするのね。</p>
+<p>コードの複雑度って読んだらわかるものだけど<br />
+各メソッドの複雑度やリファクタリングしていく中でその経過とか<br />
+そこまで把握していくのはむつかしい。</p>
 
-<h2>バージョン違い</h2>
-
-<p>ローカルにインストールされているrake のバージョンが<br />
-Octopress のmaster ブランチで利用されているものより新しかったので<br />
-ただrake とコマンドを叩いただけでは動いてくれなかった<br />
-エラーメッセージのヒントにしたがってbundle exec を頭につけることで対応</p>
-
-<h3>蛇足</h3>
-
-<p>久しぶりの更新。というよりは忘れ去っていた。<br />
-当時は今よりもなお わからないこと塗れだったのだろうけど<br />
-Octopress のセットアップと最初のポストするまでくらいは書いて欲しいよね<br />
-カテゴリの付け方とか、記事の書き方・プレビューとか確認するの時間かかったよ&hellip;</p>
+<p>数値として出せるので、継続的インテグレーションなるものとか<br />
+コードの健康度を測るログとして保存して<br />
+グラフにして可視化していくとか<br />
+コードを読まない人にも見てもらえる、共通の指標がつくっていける</p>
 
 <h2>Link</h2>
 
 <ul>
-<li><a href="http://octopress.org/docs/">Octopress Documentation</a></li>
-<li><a href="http://octopress.org/docs/blogging/">Octopress Documentation &ndash; Blogging Basics</a></li>
+<li><a href="https://github.com/seattlerb/flog">seattlerb/flog &ndash; GitHub</a></li>
+<li><a href="http://ruby.sadi.st/Ruby_Sadist.html">Confessions of a Ruby Sadist</a></li>
+<li><a href="https://github.com/sentientmonkey/vim-flog">sentientmonkey/vim-flog &ndash; GitHub</a></li>
 </ul>
 
 </div>
@@ -131,11 +151,11 @@ Octopress のセットアップと最初のポストするまでくらいは書�
   
 
 
-<time datetime="2014-03-06T23:00:37+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2014</time></div>
+<time datetime="2014-03-07T11:22:15+09:00" pubdate data-updated="true">Mar 7<span>th</span>, 2014</time></div>
 	<div class="tags">
 
 
-	<a class='category' href='/blog/categories/octopress/'>Octopress</a>, <a class='category' href='/blog/categories/git/'>git</a>
+	<a class='category' href='/blog/categories/flog/'>flog</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>
 
 
 </div>
@@ -192,8 +212,8 @@ Octopress のセットアップと最初のポストするまでくらいは書�
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://gouf.github.io/blog/2014/03/06/upgrade-octpress/';
-        var disqus_url = 'http://gouf.github.io/blog/2014/03/06/upgrade-octpress/';
+        var disqus_identifier = 'http://gouf.github.io/blog/2014/03/07/flog/';
+        var disqus_url = 'http://gouf.github.io/blog/2014/03/07/flog/';
         var disqus_script = 'embed.js';
       
     (function () {

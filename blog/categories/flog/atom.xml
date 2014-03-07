@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: flog | My Octopress Blog]]></title>
+  <link href="http://gouf.github.io/blog/categories/flog/atom.xml" rel="self"/>
+  <link href="http://gouf.github.io/"/>
+  <updated>2014-03-07T14:44:30+09:00</updated>
+  <id>http://gouf.github.io/</id>
+  <author>
+    <name><![CDATA[Gou Furuya]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[コードの複雑度を測る]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/07/flog/"/>
+    <updated>2014-03-07T11:22:15+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/07/flog</id>
+    <content type="html"><![CDATA[<p><code>ruby
+puts 'Hello Flog!'
+</code></p>
+
+<p>たとえば、このコードを計測してもらうとこんなかんじの出力をしてくれる</p>
+
+<p>```text
+$flog code.rb</p>
+
+<pre><code> 1.0: flog total
+ 1.0: flog/method average
+
+ 1.0: main#none
+</code></pre>
+
+<p>```</p>
+
+<p>数値が高いほど読みづらい複雑なコードで、シンプルなコードだと低い数値が出る。</p>
+
+<ul>
+<li><a href="https://gist.github.com/gouf/8432898">gouf/8432898 &ndash; Gist</a></li>
+</ul>
+
+
+<p>みたいな ひどいコードだと<br />
+Total 189.9 っていう高めの数値が出る。<br />
+(そういえば別の言語で測る機会があって 数値が４ケタに届きそうなのを見た憶えが)</p>
+
+<p>コードの複雑度って読んだらわかるものだけど<br />
+各メソッドの複雑度やリファクタリングしていく中でその経過とか<br />
+そこまで把握していくのはむつかしい。</p>
+
+<p>数値として出せるので、継続的インテグレーションなるものとか<br />
+コードの健康度を測るログとして保存して<br />
+グラフにして可視化していくとか<br />
+コードを読まない人にも見てもらえる、共通の指標がつくっていける</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="https://github.com/seattlerb/flog">seattlerb/flog &ndash; GitHub</a></li>
+<li><a href="http://ruby.sadi.st/Ruby_Sadist.html">Confessions of a Ruby Sadist</a></li>
+<li><a href="https://github.com/sentientmonkey/vim-flog">sentientmonkey/vim-flog &ndash; GitHub</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

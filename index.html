@@ -4,16 +4,16 @@
 <head>
 	<meta charset="utf-8">
 	<title>My Octopress Blog</title>
-	<meta name="author" content="Your Name">
+	<meta name="author" content="Gou Furuya">
 
 	
-	<meta name="description" content="セットアップ後 1
+	<meta name="description" content="1
+puts &#39;Hello Flog!&#39; たとえば、このコードを計測してもらうとこんなかんじの出力をしてくれる 1
 2
 3
 4
 5
-s &lt;bookmark_name&gt; - Saves the current directory as "bookmark_name"
-g &lt;bookmark_name&gt; - Goes (cd) to the directory &hellip;">
+$flog code.rb 1.0: flog total 1.0: flog/method average 1.0: main#none &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -61,6 +61,8 @@ g &lt;bookmark_name&gt; - Goes (cd) to the directory &hellip;">
 		<a class="twitter" href="http://twitter.com/innocent_zero" title="Twitter">Twitter</a>
 		
 		
+		<a class="github" href="https://github.com/gouf" title="GitHub">GitHub</a>
+		
     
 		
 		
@@ -84,6 +86,96 @@ g &lt;bookmark_name&gt; - Goes (cd) to the directory &hellip;">
 		
 	
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/03/07/flog/">
+		
+			コードの複雑度を測る</a>
+	</h2>
+	<div class="entry-content">
+		<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">puts</span> <span class="s1">&#39;Hello Flog!&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>たとえば、このコードを計測してもらうとこんなかんじの出力をしてくれる</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>$flog code.rb
+</span><span class='line'>     1.0: flog total
+</span><span class='line'>     1.0: flog/method average
+</span><span class='line'>
+</span><span class='line'>     1.0: main#none
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>数値が高いほど読みづらい複雑なコードで、シンプルなコードだと低い数値が出る。</p>
+
+<ul>
+<li><a href="https://gist.github.com/gouf/8432898">gouf/8432898 &ndash; Gist</a></li>
+</ul>
+
+
+<p>みたいな ひどいコードだと<br />
+Total 189.9 っていう高めの数値が出る。<br />
+(そういえば別の言語で測る機会があって 数値が４ケタに届きそうなのを見た憶えが)</p>
+
+<p>コードの複雑度って読んだらわかるものだけど<br />
+各メソッドの複雑度やリファクタリングしていく中でその経過とか<br />
+そこまで把握していくのはむつかしい。</p>
+
+<p>数値として出せるので、継続的インテグレーションなるものとか<br />
+コードの健康度を測るログとして保存して<br />
+グラフにして可視化していくとか<br />
+コードを読まない人にも見てもらえる、共通の指標がつくっていける</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="https://github.com/seattlerb/flog">seattlerb/flog &ndash; GitHub</a></li>
+<li><a href="http://ruby.sadi.st/Ruby_Sadist.html">Confessions of a Ruby Sadist</a></li>
+<li><a href="https://github.com/sentientmonkey/vim-flog">sentientmonkey/vim-flog &ndash; GitHub</a></li>
+</ul>
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-07T11:22:15+09:00" pubdate data-updated="true">Mar 7<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/flog/'>flog</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>
+
+
+</div>
+	
+	<div class="comments"><a href="/blog/2014/03/07/flog/#disqus_thread">Comments</a></div>
+	
+</div>
+</article>
 
 
     <article class="post">
@@ -360,7 +452,7 @@ Octopress のセットアップと最初のポストするまでくらいは書�
 </nav></div>
 	<footer id="footer" class="inner">Copyright &copy; 2014
 
-    Your Name
+    Gou Furuya
 
 </footer>
 	<script src="/javascripts/slash.js"></script>
