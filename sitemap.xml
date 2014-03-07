@@ -21,8 +21,16 @@
         <lastmod>2014-03-07T14:21:31+09:00</lastmod>
     </url>
     <url>
+        <loc>http://gouf.github.io/blog/2014/03/08/fizzbuzz-if-haskell/</loc>
+        <lastmod>2014-03-08T02:54:51+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://gouf.github.io/blog/2014/03/08/tweet-plugin/</loc>
+        <lastmod>2014-03-08T03:42:11+09:00</lastmod>
+    </url>
+    <url>
         <loc>http://gouf.github.io/</loc>
-        <lastmod>2014-03-07T14:21:31+09:00</lastmod>
+        <lastmod>2014-03-08T03:42:11+09:00</lastmod>
     </url>
     <url>
         <loc>http://gouf.github.io/robots.txt</loc>
@@ -30,6 +38,6 @@
     </url>
     <url>
         <loc>http://gouf.github.io/blog/archives/</loc>
-        <lastmod>2014-03-07T14:21:31+09:00</lastmod>
+        <lastmod>2014-03-08T03:42:11+09:00</lastmod>
     </url>
 </urlset>

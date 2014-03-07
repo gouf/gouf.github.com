@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: haskell | My Octopress Blog]]></title>
+  <link href="http://gouf.github.io/blog/categories/haskell/atom.xml" rel="self"/>
+  <link href="http://gouf.github.io/"/>
+  <updated>2014-03-08T03:42:11+09:00</updated>
+  <id>http://gouf.github.io/</id>
+  <author>
+    <name><![CDATA[Gou Furuya]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Haskell でFizzBuzz]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/08/fizzbuzz-if-haskell/"/>
+    <updated>2014-03-08T02:16:25+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/08/fizzbuzz-if-haskell</id>
+    <content type="html"><![CDATA[<p>まだ ぜんぜん わからない。"おまじない"、呪文を唱えてるかんじ。</p>
+
+<p><div><script src='https://gist.github.com/9415629.js'></script>
+<noscript><pre><code>toStr :: Int -&gt; String
+toStr x = if x `mod` 15 == 0 then &quot;FizzBuzz&quot;
+          else if x `mod` 3 == 0 then &quot;Fizz&quot;
+          else if x `mod` 5 == 0 then &quot;Buzz&quot;
+          else show x
+fizzbuzz :: Int -&gt; [String]
+fizzbuzz n = map toStr[1 .. n]
+
+main = do
+  print (fizzbuzz 15)
+
+-- output: [&quot;1&quot;,&quot;2&quot;,&quot;Fizz&quot;,&quot;4&quot;,&quot;Buzz&quot;,&quot;Fizz&quot;,&quot;7&quot;,&quot;8&quot;,&quot;Fizz&quot;,&quot;Buzz&quot;,&quot;11&quot;,&quot;Fizz&quot;,&quot;13&quot;,&quot;14&quot;,&quot;FizzBuzz&quot;]</code></pre></noscript></div>
+</p>
+
+<hr />
+
+<p><div class='embed tweet'>Tweet could not be processed</div></p>
+
+<p>ちょっとずつ、やっていこう。</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://www.geocities.jp/m_hiroi/func/haskell.html#begin">M.Hiroi&rsquo;s Home Page / Haskell Programming'</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

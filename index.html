@@ -7,13 +7,9 @@
 	<meta name="author" content="Gou Furuya">
 
 	
-	<meta name="description" content="1
-puts &#39;Hello Flog!&#39; たとえば、このコードを計測してもらうとこんなかんじの出力をしてくれる 1
-2
-3
-4
-5
-$flog code.rb 1.0: flog total 1.0: flog/method average 1.0: main#none &hellip;">
+	<meta name="description" content="以下のように貼り付けると、Tweet の埋め込み表示をしてくれる
+(※バックスラッシュは埋め込み処理のエスケープのために追記している) 1
+\{\% tweet https://twitter.com/innocent_zero/status/441994818189668352 %} &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -86,6 +82,148 @@ $flog code.rb 1.0: flog total 1.0: flog/method average 1.0: main#none &hellip;">
 		
 	
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/03/08/tweet-plugin/">
+		
+			Tweet Plugin</a>
+	</h2>
+	<div class="entry-content">
+		<p>以下のように貼り付けると、Tweet の埋め込み表示をしてくれる<br />
+(※バックスラッシュは埋め込み処理のエスケープのために追記している)</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>\{\% tweet https://twitter.com/innocent_zero/status/441994818189668352 %}
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<div class='embed tweet'><blockquote class="twitter-tweet"><p>Twitter が用意してくれてる長い長いコピペコード貼り付けるより プラグインで発言元URL 貼り付けるだけで済むのはよい。</p>&mdash; iz (@innocent_zero) <a href="https://twitter.com/innocent_zero/statuses/441994818189668352">March 7, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+
+<p>ただ、データを取得する live_response の部分にバグがあるみたい。
+(いまのTwitter の仕様に合ってない?)</p>
+
+<p>本家のコードそのままだと動かないので<br />
+fork されたリポジトリのコードを利用するといいかも。</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="https://github.com/scottwb/jekyll-tweet-tag">jekyll-tweet-tag &ndash; GitHub</a></li>
+<li><a href="https://github.com/scottwb/jekyll-tweet-tag/network/members">scottwb/jekyll-tweet-tag network members &ndash; GitHub</a></li>
+</ul>
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-08T03:03:46+09:00" pubdate data-updated="true">Mar 8<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/octpress/'>octpress</a>, <a class='category' href='/blog/categories/plugin/'>plugin</a>
+
+
+</div>
+	
+	<div class="comments"><a href="/blog/2014/03/08/tweet-plugin/#disqus_thread">Comments</a></div>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/03/08/fizzbuzz-if-haskell/">
+		
+			Haskell でFizzBuzz</a>
+	</h2>
+	<div class="entry-content">
+		<p>まだ ぜんぜん わからない。&#8221;おまじない&#8221;、呪文を唱えてるかんじ。</p>
+
+<div><script src='https://gist.github.com/9415629.js'></script>
+<noscript><pre><code>toStr :: Int -&gt; String
+toStr x = if x `mod` 15 == 0 then &quot;FizzBuzz&quot;
+          else if x `mod` 3 == 0 then &quot;Fizz&quot;
+          else if x `mod` 5 == 0 then &quot;Buzz&quot;
+          else show x
+fizzbuzz :: Int -&gt; [String]
+fizzbuzz n = map toStr[1 .. n]
+
+main = do
+  print (fizzbuzz 15)
+
+-- output: [&quot;1&quot;,&quot;2&quot;,&quot;Fizz&quot;,&quot;4&quot;,&quot;Buzz&quot;,&quot;Fizz&quot;,&quot;7&quot;,&quot;8&quot;,&quot;Fizz&quot;,&quot;Buzz&quot;,&quot;11&quot;,&quot;Fizz&quot;,&quot;13&quot;,&quot;14&quot;,&quot;FizzBuzz&quot;]</code></pre></noscript></div>
+
+
+<hr />
+
+<div class='embed tweet'><blockquote class="twitter-tweet"><p>呪文に見えるのは正しい感覚ですね。魔法はまず呪文を覚えるところから。:p RT <a href="https://twitter.com/innocent_zero">@innocent_zero</a>: まずHaskell の構文が呪文に見えているので なんとか ならない、かな&#8230;</p>&mdash; Nobuo Yamashita (@nobsun) <a href="https://twitter.com/nobsun/statuses/441363913972539392">March 6, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+
+<p>ちょっとずつ、やっていこう。</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://www.geocities.jp/m_hiroi/func/haskell.html#begin">M.Hiroi&rsquo;s Home Page / Haskell Programming&#8217;</a></li>
+</ul>
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-08T02:16:25+09:00" pubdate data-updated="true">Mar 8<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/haskell/'>haskell</a>
+
+
+</div>
+	
+	<div class="comments"><a href="/blog/2014/03/08/fizzbuzz-if-haskell/#disqus_thread">Comments</a></div>
+	
+</div>
+</article>
 
 
     <article class="post">
