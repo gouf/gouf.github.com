@@ -4,7 +4,7 @@
   <title><![CDATA[Category: haskell | My Octopress Blog]]></title>
   <link href="http://gouf.github.io/blog/categories/haskell/atom.xml" rel="self"/>
   <link href="http://gouf.github.io/"/>
-  <updated>2014-03-08T03:42:11+09:00</updated>
+  <updated>2014-03-08T09:16:29+09:00</updated>
   <id>http://gouf.github.io/</id>
   <author>
     <name><![CDATA[Gou Furuya]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[haskell tutorial links]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/08/haskell-tutorial-links/"/>
+    <updated>2014-03-08T08:01:48+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/08/haskell-tutorial-links</id>
+    <content type="html"><![CDATA[<p>まだ読み始めたばかりだけど<br />
+&ldquo;Two Dozen Short Lessons in Haskell&rdquo; がすごく丁寧に書かれてる<br />
+もしかしてプログラミングしたことないひとでも始められるかもわかんない</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://www.cs.ou.edu/~rlpage/fpclassCurrent/textbook/haskell.shtml">Two Dozen Short Lessons in Haskell</a></li>
+<li><a href="http://mymemo.weby117.com/develop/haskell/haskell_1.html">Haskell 入門に役立つサイト | サイト運営の私的メモ</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Haskell でFizzBuzz]]></title>
