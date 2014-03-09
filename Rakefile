@@ -84,13 +84,14 @@ task :preview do
   jekyllPid = Process.spawn({"OCTOPRESS_ENV"=>"preview"}, "jekyll --auto")
   compassPid = Process.spawn("compass watch")
   rackupPid = Process.spawn("rackup --port #{server_port}")
+  livereloadPid = Process.spawn("livereload public/blog")
 
   trap("INT") {
-    [jekyllPid, compassPid, rackupPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
+    [jekyllPid, compassPid, rackupPid, livereloadPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
     exit 0
   }
 
-  [jekyllPid, compassPid, rackupPid].each { |pid| Process.wait(pid) }
+  [jekyllPid, compassPid, rackupPid, livereloadPid].each { |pid| Process.wait(pid) }
 end
 
 # usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")
