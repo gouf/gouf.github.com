@@ -15,6 +15,468 @@
        the first 250 characters -->
   <p>テスト投稿</p>
 
+  <h2><a href="/blog/2014/03/10/practice-for-rspec.html">practice for rspec</a> <span>Mar 10</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>コード書くのと、RSpec のれんしゅう。<br />
+このループの総テスト数を保証するテストをひとつ書いてもいいかも</p>
+
+<p>眠くて回らないアタマで書いたっていう言い訳はのこしておく</p>
+
+<p>{% tweet https://twitter.com/tenki_y/status/442670690517266433 %}</p>
+
+<p>{% gist gouf/9457227 %}</p>
+
+<p><code>text
+Finished in 0.00749 seconds
+82 examples, 0 failures
+</code></p>
+
+  <h2><a href="/blog/2014/03/10/guard-rspec.html">guard でテストを自動実行</a> <span>Mar 10</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>Web 上のチュートリアルを通して<br />
+「最初の一歩」くらいはテストのやり方がわかったような、そうじゃないような。</p>
+
+<ul>
+  <li>テストを書いて</li>
+  <li>コマンド叩いてテストを走らせて</li>
+  <li>テストに沿ったコードを実装して</li>
+  <li>コマンド叩いてテストを走らせて</li>
+</ul>
+
+<p>っていう流れだけど、やっぱりコマンド叩いてテストを走らせるの、めんどう。</p>
+
+<h2 id="guard-">Guard で監視・テスト実行</h2>
+
+<h3 id="section">インストール</h3>
+
+<p><code>text
+$echo gem \'guard-rspec\', require: false &gt;&gt; Gemfile
+$bundle
+</code></p>
+
+<h3 id="section-1">初期化・実行</h3>
+
+<p><code>text
+$guard init rspec
+$guard
+</code></p>
+
+<p>初期化後に監視対象を設定するファイル Guardfile が生成される<br />
+細かな設定とかはこれを編集すれば良さそう</p>
+
+<p>編集すると自動でテストを走らせてくれて、mac アプリのgrowl みたいな通知もしてくれる</p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+  <li><a href="https://github.com/guard/guard">guard/guard - GitHub</a></li>
+  <li><a href="https://github.com/guard/guard-rspec">guard/guard-rspec - GitHub</a></li>
+</ul>
+
+  <h2><a href="/blog/2014/03/10/auto-watch-livereload.html">preview タスクにlivereload を追加</a> <span>Mar 10</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>Rakefile にあるpreview タスクを編集して<br />
+python-livereload が起動するようにしてみた。</p>
+
+<p>これでrake preview だけで、livereload も一緒に起動するように。</p>
+
+<h2 id="rakefile-">Rakefile の編集</h2>
+
+<p>Rakefile の79行目近辺の、proccess を作ってるコードに<br />
+livereload を加えてみた。</p>
+
+<p>Rake ってなんだろう。しらべてみよう。</p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+  <li><a href="http://microblog.anthonyestebe.com/2013-11-20/live-reload-with-octopress/">live reload with octopress</a></li>
+  <li><a href="http://www.kyobashi.org/hf/RakeUserGuide/?AboutRakeUserGuide">RakeUserGuide - Rake ユーザガイド</a></li>
+</ul>
+
+  <h2><a href="/blog/2014/03/09/octpress-with-livereload.html">octpress with livereload</a> <span>Mar  9</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>新規ポストの編集・確認作業を楽に。</p>
+
+<p>Google Chrome のlivereload がサーバを見つけられないとか<br />
+guard-livereload がUbuntu では動いてくれないとか(調査不足<br />
+いろいろ詰まるところがあったけど<br />
+python 版のlivereload をインストールしたら動いてくれた</p>
+
+<h2 id="python-livereload-">python-livereload のインストール</h2>
+
+<p><code>text
+$cd ~
+$git clone https://github.com/lepture/python-livereload.git
+$cd python-livereload
+$sudo python setup.py install
+</code></p>
+
+<p>easy_install やpip でのインストールでも可。<br /></p>
+
+<h2 id="section">起動させる</h2>
+
+<p>インストールが終わると、livereload コマンドが使えるようになるので<br />
+livereload に監視対象のフォルダ(静的ページが生成されるフォルダ)をただ渡してあげればOK.<br />
+教えなくてもカレントフォルダ直下を監視対象に動いてくれる。</p>
+
+<p>あとはOctpress のpreview コマンドと、Chrome 拡張のlivereload をオンにするだけ。</p>
+
+<h3 id="chrome">Chrome</h3>
+
+<p>あ そうだ、拡張機能の設定にある、「ファイルの URL へのアクセスを許可する」をオンにしておかないとうごかないよ。</p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+  <li><a href="http://livereload.readthedocs.org/en/latest/index.html">LiveReload — Python LiveReload 2.0.0 documentation</a></li>
+  <li><a href="https://pypi.python.org/pypi/livereload">livereload 2.1.0 : Python Package Index</a></li>
+  <li><a title="CSS edits and image changes apply live. CoffeeScript, SASS, LESS and others just work." href="http://livereload.com/">LiveReload</a></li>
+</ul>
+
+  <h2><a href="/blog/2014/03/09/sinatra-with-rspec.html">sinatra with rspec</a> <span>Mar  9</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>簡単なsinatra アプリを通して、アプリの'/' にアクセスした時に、</p>
+
+<ul>
+  <li>アクセスできているか(HTTP 200 をもらえるか)</li>
+  <li>Hello って返事をもらえるか</li>
+</ul>
+
+<p>をRSpec を利用してテストしてみる。</p>
+
+<!-- more -->
+
+<h2 id="section">セットアップ</h2>
+
+<h3 id="section-1">必要なファイルを用意する</h3>
+
+<p>ターミナルでごにょごにょ</p>
+
+<p><code>text
+$cd ~
+$mkcd sinatra_with_rspec
+$bundle init
+$echo gem \"rspec\" &gt;&gt; Gemfile
+$echo gem \"sinatra\" &gt;&gt; Gemfile
+$touch main.rb
+$touch spec/main_spec.rb
+$bundle
+$rspec --init
+$tree .
+.
+├── Gemfile
+├── Gemfile.lock
+├── main.rb
+└── spec
+    ├── main_spec.rb
+    └── spec_helper.rb
+</code></p>
+
+<h3 id="section-2">テストの準備</h3>
+
+<p>テスト前の、必要最低限なコードはこんなかんじに。</p>
+
+<p>rspec/main_spec.rb にはこんなふうに動いてもらいたいという表題をつけている<br />
+(it xxxx の部分)</p>
+
+<p>```ruby
+# main.rb
+require 'bundle'
+Bundler.require</p>
+
+<p>class MyApp &lt; Sinatra::Base
+end
+```</p>
+
+<p>```ruby
+# rspec/main_spec.rb
+require 'spec_helper'
+require_relative '../main'</p>
+
+<p>set :environment, :test</p>
+
+<p>describe "MyApp" do
+  include Rack::Test::Methods</p>
+
+<p>def app
+    #Sinatra::Application
+    MyApp.new
+  end</p>
+
+<p>describe "Response Test" do
+    context "when accessing '/'" do
+      it 'should be get "Hello"'
+      it 'should be get OK'
+    end
+  end
+end
+```</p>
+
+<p>それと、spec/spec_helper.rb にはrequire 'rack/test' を追記した。</p>
+
+<h2 id="section-3">テストのテスト</h2>
+
+<p>ここまでで、テストを走らせる準備はできたので、テストを実行してみよう</p>
+
+<p>```text
+$rspec spec/main_spec.rb 
+Run options: include {:focus=&gt;true}</p>
+
+<p>All examples were filtered out; ignoring {:focus=&gt;true}
+**</p>
+
+<p>Pending:
+  MyApp Response Test when accessing '/' should be get "Hello"
+    # Not yet implemented
+    # ./spec/main_spec.rb:16
+  MyApp Response Test when accessing '/' should be get OK
+    # Not yet implemented
+    # ./spec/main_spec.rb:17</p>
+
+<p>Finished in 0.00044 seconds
+2 examples, 0 failures, 2 pending</p>
+
+<p>Randomized with seed 15081</p>
+
+<p>```</p>
+
+<p>7 - 13 行目に注目。これからテストしていく項目がrspec に認識されて、Pending な状態としてリストアップされている</p>
+
+<p>あと、テスト内容が自動で文章になっている点にも注目。</p>
+
+<h2 id="section-4">テスト内容を書く</h2>
+
+<h3 id="section-5">失敗するテストを書く</h3>
+
+<p>実際に、テストできるようテスト内容を実装していく</p>
+
+<p>sinatra アプリのルートにアクセスした時の期待する動作として以下のようになってほしいというのを、コードにも同様に書き下していく</p>
+
+<p>```ruby
+require 'spec_helper'
+require_relative '../main'</p>
+
+<p>set :environment, :test</p>
+
+<p>describe "MyApp" do
+  include Rack::Test::Methods</p>
+
+<p>def app
+    #Sinatra::Application
+    MyApp.new
+  end</p>
+
+<p>describe "Response Test" do
+    context "when accessing '/'" do
+      it 'should be get "Hello"' do
+        get '/'
+        last_response.body.should eq 'Hello'
+      end
+      it 'should be get OK' do
+        get '/'
+        last_response.should be_ok
+      end
+    end
+  end
+end
+```</p>
+
+<p>では、テストを走らせてみよう</p>
+
+<p>失敗するに決まってる？ それは本当に？</p>
+
+<p>```text
+rspec spec/main_spec.rb 
+Run options: include {:focus=&gt;true}</p>
+
+<p>Finished in 0.02286 seconds
+2 examples, 2 failures</p>
+
+<p>Failed examples:</p>
+
+<p>rspec ./spec/main_spec.rb:16 # MyApp Response Test when accessing '/' should be get "Hello"
+rspec ./spec/main_spec.rb:20 # MyApp Response Test when accessing '/' should be get OK</p>
+
+<p>Randomized with seed 41435</p>
+
+<p>```</p>
+
+<p>無事、テストは失敗に終わった。<br />
+RSpec がエラーで止まることもなく<strong>無事にすべてのテストを完了し、失敗するテストがあることを教えてくれた。構文エラーもない、問題なし！</strong></p>
+
+<p>ああっ、肝心のmain.rb にはまだ何も書いていなかった。そうだった。
+では、次に進もう</p>
+
+<h2 id="section-6">テストにパスするコードを書く</h2>
+
+<p>テストにどんなふうに動いて欲しいかというのを、ラベル付けもしたし、コードに書き下しもした</p>
+
+<p>テストにパスするよう、main.rb にコードを書いて、テストを走らせてみよう</p>
+
+<p>```ruby
+require 'bundler'
+Bundler.require</p>
+
+<p>class MyApp &lt; Sinatra::Base
+  get '/' do
+    'Hello'
+  end
+end</p>
+
+<p>```</p>
+
+<p>```text
+rspec spec/main_spec.rb 
+Run options: include {:focus=&gt;true}</p>
+
+<p>All examples were filtered out; ignoring {:focus=&gt;true}
+..</p>
+
+<p>Finished in 0.0226 seconds
+2 examples, 0 failures</p>
+
+<p>Randomized with seed 9802</p>
+
+<p>```</p>
+
+<p>失敗するテストはなくなって、すべてのテストは問題なく通過した！ オールグリーン！ やったね！</p>
+
+<h2 id="section-7">蛇足</h2>
+
+<p>こんなかんじで、テストと実装を積み重ねていけば、安心してコードを書いていけそう。</p>
+
+<h2 id="link">Link</h2>
+<ul>
+  <li><a href="http://www.sinatrarb.com/testing.html">Testing Sinatra with Rack::Test</a> (RSpec の項を参照)</li>
+  <li><a href="http://betterspecs.org/jp/">Better Specs { rspec guidelines with ruby }</a></li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>[mkcd: mkdir foo &amp;&amp; cd foo</td>
+          <td>Charles Curley's Weblog](http://www.charlescurley.com/blog/articles/mkcd_mkdir_foo____cd_foo/index.html)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><a href="http://www.limemo.net/blog/2013/08/%E3%80%90ubuntu%E3%80%91%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E6%A7%8B%E9%80%A0%E3%82%92%E8%A6%8B%E3%82%84%E3%81%99%E3%81%8F%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E3%80%8Ctree%E3%80%8D.html">Linuxブログ : 【Ubuntu】ディレクトリ構造を見やすく表示する「tree」コマンドの使い方</a></li>
+</ul>
+
+  <h2><a href="/blog/2014/03/08/haskell-tutorial-links.html">haskell tutorial links</a> <span>Mar  8</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>まだ読み始めたばかりだけど<br />
+"Two Dozen Short Lessons in Haskell" がすごく丁寧に書かれてる<br />
+もしかしてプログラミングしたことないひとでも始められるかもわかんない</p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+  <li><a href="http://www.cs.ou.edu/~rlpage/fpclassCurrent/textbook/haskell.shtml">Two Dozen Short Lessons in Haskell</a></li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>[Haskell 入門に役立つサイト</td>
+          <td>サイト運営の私的メモ](http://mymemo.weby117.com/develop/haskell/haskell_1.html)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+  <h2><a href="/blog/2014/03/08/tweet-plugin.html">tweet plugin</a> <span>Mar  8</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>以下のように貼り付けると、Tweet の埋め込み表示をしてくれる<br />
+(※バックスラッシュは埋め込み処理のエスケープのために追記している)</p>
+
+<p><code>text
+\{\% tweet https://twitter.com/innocent_zero/status/441994818189668352 %}
+</code></p>
+
+<p>{% tweet https://twitter.com/innocent_zero/status/441994818189668352 %}</p>
+
+<p>ただ、データを取得する live_response の部分にバグがあるみたい。
+(いまのTwitter の仕様に合ってない?)</p>
+
+<p>本家のコードそのままだと動かないので<br />
+fork されたリポジトリのコードを利用するといいかも。</p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+  <li><a href="https://github.com/scottwb/jekyll-tweet-tag">jekyll-tweet-tag - GitHub</a></li>
+  <li><a href="https://github.com/scottwb/jekyll-tweet-tag/network/members">scottwb/jekyll-tweet-tag network members - GitHub</a></li>
+</ul>
+
+  <h2><a href="/blog/2014/03/08/fizzbuzz-if-haskell.html">Haskell でFizzBuzz</a> <span>Mar  8</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p>まだ ぜんぜん わからない。"おまじない"、呪文を唱えてるかんじ。</p>
+
+<p>{% gist 9415629 %}</p>
+
+<hr />
+
+<p>{% tweetnocache https://twitter.com/nobsun/statuses/441363913972539392 %}</p>
+
+<p>ちょっとずつ、やっていこう。</p>
+
+<h2 id="link">Link</h2>
+<ul>
+  <li><a href="http://www.geocities.jp/m_hiroi/func/haskell.html#begin">M.Hiroi's Home Page / Haskell Programming'</a></li>
+</ul>
+
+  <h2><a href="/blog/2014/03/07/flog.html">コードの複雑度を測る</a> <span>Mar  7</span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <p><code>ruby
+puts 'Hello Flog!'
+</code></p>
+
+<p>たとえば、このコードを計測してもらうとこんなかんじの出力をしてくれる</p>
+
+<p>```text
+$flog code.rb
+     1.0: flog total
+     1.0: flog/method average</p>
+
+<pre><code> 1.0: main#none ```
+</code></pre>
+
+<p>数値が高いほど読みづらい複雑なコードで、シンプルなコードだと低い数値が出る。</p>
+
+<ul>
+  <li><a href="https://gist.github.com/gouf/8432898">gouf/8432898 - Gist</a></li>
+</ul>
+
+<p>みたいな ひどいコードだと<br />
+Total 189.9 っていう高めの数値が出る。<br />
+(そういえば別の言語で測る機会があって 数値が４ケタに届きそうなのを見た憶えが)</p>
+
+<p>コードの複雑度って読んだらわかるものだけど<br />
+各メソッドの複雑度やリファクタリングしていく中でその経過とか<br />
+そこまで把握していくのはむつかしい。</p>
+
+<p>数値として出せるので、継続的インテグレーションなるものとか<br />
+コードの健康度を測るログとして保存して<br />
+グラフにして可視化していくとか<br />
+コードを読まない人にも見てもらえる、共通の指標がつくっていける</p>
+
+<h2 id="link">Link</h2>
+<ul>
+  <li><a href="https://github.com/seattlerb/flog">seattlerb/flog - GitHub</a></li>
+  <li><a href="http://ruby.sadi.st/Ruby_Sadist.html">Confessions of a Ruby Sadist</a></li>
+  <li><a href="https://github.com/sentientmonkey/vim-flog">sentientmonkey/vim-flog - GitHub</a></li>
+</ul>
+
 
 
     </div>
@@ -25,19 +487,69 @@
         
           <li><a href="/blog/2014/03/10/middleman_blogging.html">middleman blogging</a> <span>Mar 10</span></li>
         
+          <li><a href="/blog/2014/03/10/practice-for-rspec.html">practice for rspec</a> <span>Mar 10</span></li>
+        
+          <li><a href="/blog/2014/03/10/guard-rspec.html">guard でテストを自動実行</a> <span>Mar 10</span></li>
+        
+          <li><a href="/blog/2014/03/10/auto-watch-livereload.html">preview タスクにlivereload を追加</a> <span>Mar 10</span></li>
+        
+          <li><a href="/blog/2014/03/09/octpress-with-livereload.html">octpress with livereload</a> <span>Mar  9</span></li>
+        
+          <li><a href="/blog/2014/03/09/sinatra-with-rspec.html">sinatra with rspec</a> <span>Mar  9</span></li>
+        
+          <li><a href="/blog/2014/03/08/haskell-tutorial-links.html">haskell tutorial links</a> <span>Mar  8</span></li>
+        
+          <li><a href="/blog/2014/03/08/tweet-plugin.html">tweet plugin</a> <span>Mar  8</span></li>
+        
+          <li><a href="/blog/2014/03/08/fizzbuzz-if-haskell.html">Haskell でFizzBuzz</a> <span>Mar  8</span></li>
+        
+          <li><a href="/blog/2014/03/07/flog.html">コードの複雑度を測る</a> <span>Mar  7</span></li>
+        
       </ol>
 
       <h2>Tags</h2>
       <ol>
         
+          <li><a href="/blog/tags/octpress.html">octpress (3)</a></li>
+        
+          <li><a href="/blog/tags/plugin.html">plugin (1)</a></li>
+        
+          <li><a href="/blog/tags/rake.html">rake (1)</a></li>
+        
+          <li><a href="/blog/tags/livereload.html">livereload (2)</a></li>
+        
+          <li><a href="/blog/tags/python.html">python (2)</a></li>
+        
+          <li><a href="/blog/tags/sinatra.html">sinatra (1)</a></li>
+        
+          <li><a href="/blog/tags/rspec.html">rspec (3)</a></li>
+        
+          <li><a href="/blog/tags/octpress.html">Octpress (2)</a></li>
+        
+          <li><a href="/blog/tags/git.html">git (2)</a></li>
+        
+          <li><a href="/blog/tags/haskell.html">haskell (2)</a></li>
+        
+          <li><a href="/blog/tags/linux.html">linux (1)</a></li>
+        
+          <li><a href="/blog/tags/bash.html">bash (1)</a></li>
+        
+          <li><a href="/blog/tags/ruby.html">ruby (2)</a></li>
+        
+          <li><a href="/blog/tags/flog.html">flog (1)</a></li>
+        
           <li><a href="/blog/tags/middleman.html">middleman (1)</a></li>
+        
+          <li><a href="/blog/tags/octopress.html">Octopress (1)</a></li>
+        
+          <li><a href="/blog/tags/guard.html">guard (1)</a></li>
         
       </ol>
 
       <h2>By Year</h2>
       <ol>
         
-          <li><a href="/blog/2014.html">2014 (1)</a></li>
+          <li><a href="/blog/2014.html">2014 (14)</a></li>
         
       </ol>
     </aside>

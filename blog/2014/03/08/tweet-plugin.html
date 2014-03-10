@@ -3,21 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
-    <title>Blog Title</title>
+    <title>Blog Title - tweet plugin</title>
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" />
   </head>
   <body>
     
     <div id="main" role="main">
-      <h1>Articles tagged 'middleman'</h1>
+      <p>以下のように貼り付けると、Tweet の埋め込み表示をしてくれる<br />
+(※バックスラッシュは埋め込み処理のエスケープのために追記している)</p>
 
+<p><code>text
+\{\% tweet https://twitter.com/innocent_zero/status/441994818189668352 %}
+</code></p>
+
+<p>{% tweet https://twitter.com/innocent_zero/status/441994818189668352 %}</p>
+
+<p>ただ、データを取得する live_response の部分にバグがあるみたい。
+(いまのTwitter の仕様に合ってない?)</p>
+
+<p>本家のコードそのままだと動かないので<br />
+fork されたリポジトリのコードを利用するといいかも。</p>
+
+<h2 id="link">Link</h2>
 
 <ul>
-  
-    <li><a href="/blog/2014/03/10/middleman_blogging.html">middleman blogging</a> <span>Mar 10</span></li>
-  
+  <li><a href="https://github.com/scottwb/jekyll-tweet-tag">jekyll-tweet-tag - GitHub</a></li>
+  <li><a href="https://github.com/scottwb/jekyll-tweet-tag/network/members">scottwb/jekyll-tweet-tag network members - GitHub</a></li>
 </ul>
-
 
     </div>
     

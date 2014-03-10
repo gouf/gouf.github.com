@@ -3,21 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
-    <title>Blog Title</title>
+    <title>Blog Title - octpress with livereload</title>
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" />
   </head>
   <body>
     
     <div id="main" role="main">
-      <h1>Articles tagged 'middleman'</h1>
+      <p>新規ポストの編集・確認作業を楽に。</p>
 
+<p>Google Chrome のlivereload がサーバを見つけられないとか<br />
+guard-livereload がUbuntu では動いてくれないとか(調査不足<br />
+いろいろ詰まるところがあったけど<br />
+python 版のlivereload をインストールしたら動いてくれた</p>
+
+<h2 id="python-livereload-">python-livereload のインストール</h2>
+
+<p><code>text
+$cd ~
+$git clone https://github.com/lepture/python-livereload.git
+$cd python-livereload
+$sudo python setup.py install
+</code></p>
+
+<p>easy_install やpip でのインストールでも可。<br /></p>
+
+<h2 id="section">起動させる</h2>
+
+<p>インストールが終わると、livereload コマンドが使えるようになるので<br />
+livereload に監視対象のフォルダ(静的ページが生成されるフォルダ)をただ渡してあげればOK.<br />
+教えなくてもカレントフォルダ直下を監視対象に動いてくれる。</p>
+
+<p>あとはOctpress のpreview コマンドと、Chrome 拡張のlivereload をオンにするだけ。</p>
+
+<h3 id="chrome">Chrome</h3>
+
+<p>あ そうだ、拡張機能の設定にある、「ファイルの URL へのアクセスを許可する」をオンにしておかないとうごかないよ。</p>
+
+<h2 id="link">Link</h2>
 
 <ul>
-  
-    <li><a href="/blog/2014/03/10/middleman_blogging.html">middleman blogging</a> <span>Mar 10</span></li>
-  
+  <li><a href="http://livereload.readthedocs.org/en/latest/index.html">LiveReload — Python LiveReload 2.0.0 documentation</a></li>
+  <li><a href="https://pypi.python.org/pypi/livereload">livereload 2.1.0 : Python Package Index</a></li>
+  <li><a title="CSS edits and image changes apply live. CoffeeScript, SASS, LESS and others just work." href="http://livereload.com/">LiveReload</a></li>
 </ul>
-
 
     </div>
     

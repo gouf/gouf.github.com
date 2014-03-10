@@ -3,21 +3,51 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
-    <title>Blog Title</title>
+    <title>Blog Title - コードの複雑度を測る</title>
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" />
   </head>
   <body>
     
     <div id="main" role="main">
-      <h1>Articles tagged 'middleman'</h1>
+      <p><code>ruby
+puts 'Hello Flog!'
+</code></p>
 
+<p>たとえば、このコードを計測してもらうとこんなかんじの出力をしてくれる</p>
+
+<p>```text
+$flog code.rb
+     1.0: flog total
+     1.0: flog/method average</p>
+
+<pre><code> 1.0: main#none ```
+</code></pre>
+
+<p>数値が高いほど読みづらい複雑なコードで、シンプルなコードだと低い数値が出る。</p>
 
 <ul>
-  
-    <li><a href="/blog/2014/03/10/middleman_blogging.html">middleman blogging</a> <span>Mar 10</span></li>
-  
+  <li><a href="https://gist.github.com/gouf/8432898">gouf/8432898 - Gist</a></li>
 </ul>
 
+<p>みたいな ひどいコードだと<br />
+Total 189.9 っていう高めの数値が出る。<br />
+(そういえば別の言語で測る機会があって 数値が４ケタに届きそうなのを見た憶えが)</p>
+
+<p>コードの複雑度って読んだらわかるものだけど<br />
+各メソッドの複雑度やリファクタリングしていく中でその経過とか<br />
+そこまで把握していくのはむつかしい。</p>
+
+<p>数値として出せるので、継続的インテグレーションなるものとか<br />
+コードの健康度を測るログとして保存して<br />
+グラフにして可視化していくとか<br />
+コードを読まない人にも見てもらえる、共通の指標がつくっていける</p>
+
+<h2 id="link">Link</h2>
+<ul>
+  <li><a href="https://github.com/seattlerb/flog">seattlerb/flog - GitHub</a></li>
+  <li><a href="http://ruby.sadi.st/Ruby_Sadist.html">Confessions of a Ruby Sadist</a></li>
+  <li><a href="https://github.com/sentientmonkey/vim-flog">sentientmonkey/vim-flog - GitHub</a></li>
+</ul>
 
     </div>
     
