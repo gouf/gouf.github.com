@@ -8,7 +8,13 @@
   <id>http://gouf.github.com/</id>
   <author>
     <name><![CDATA[gouf]]></name>
-    
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://gouf.github.io/atom.xml" rel="self"/>
+  <link href="http://gouf.github.io/"/>
+  <updated>2014-03-10T09:29:51+09:00</updated>
+  <id>http://gouf.github.io/</id>
+  <author>
+    <name><![CDATA[Gou Furuya]]></name>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
@@ -76,6 +82,527 @@ rake preview にはrake watch の機能もあるので、プレビューしな�
 <li>(これだからYAMLはいやなんだ&#8230;!!)</li>
 </ul>
 </li>
+    <title type="html"><![CDATA[practice for rspec]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/10/practice-for-rspec/"/>
+    <updated>2014-03-10T09:12:04+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/10/practice-for-rspec</id>
+    <content type="html"><![CDATA[<p>コード書くのと、RSpec のれんしゅう。<br />
+このループの総テスト数を保証するテストをひとつ書いてもいいかも</p>
+
+<p>眠くて回らないアタマで書いたっていう言い訳はのこしておく</p>
+
+<div class='embed tweet'><blockquote class="twitter-tweet"><p>やべー、ボーッとしてたら世紀の大発見した！！！&#10;一の位と十の位が違う二桁の値を用意する。&#10;その値の、一の位と十の位を入れ換えた値を元の値から引き算する。&#10;そうして出てきた答えは必ず9で割れる！！！</p>&mdash; てんき (@tenki_y) <a href="https://twitter.com/tenki_y/statuses/442670690517266433">March 9, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+
+
+
+<div><script src='https://gist.github.com/9457227.js'></script>
+<noscript><pre><code>require &#39;spec_helper&#39;
+
+describe &quot;always divisible by 9&quot; do
+  (1..100).each do |x|
+    first = x.to_s[0]
+    last  = x.to_s[1]
+    next if first == last
+    next if first.nil? or last.nil?
+    swap_x = (last + first).to_i
+    new_x = (x - swap_x).abs
+    it &quot;is #{x}: #{new_x} / 9 is 0&quot; do
+      result = new_x % 9
+      expect(result).to eq 0
+    end
+  end
+end</code></pre></noscript></div>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>Finished in 0.00749 seconds
+</span><span class='line'>82 examples, 0 failures
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[guard でテストを自動実行]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/10/guard-rspec/"/>
+    <updated>2014-03-10T02:02:22+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/10/guard-rspec</id>
+    <content type="html"><![CDATA[<p>Web 上のチュートリアルを通して<br />
+「最初の一歩」くらいはテストのやり方がわかったような、そうじゃないような。</p>
+
+<ul>
+<li>テストを書いて</li>
+<li>コマンド叩いてテストを走らせて</li>
+<li>テストに沿ったコードを実装して</li>
+<li>コマンド叩いてテストを走らせて</li>
+</ul>
+
+
+<p>っていう流れだけど、やっぱりコマンド叩いてテストを走らせるの、めんどう。</p>
+
+<h2>Guard で監視・テスト実行</h2>
+
+<h3>インストール</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>$echo gem \&#39;guard-rspec\&#39;, require: false &gt;&gt; Gemfile
+</span><span class='line'>$bundle
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>初期化・実行</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>$guard init rspec
+</span><span class='line'>$guard
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>初期化後に監視対象を設定するファイル Guardfile が生成される<br />
+細かな設定とかはこれを編集すれば良さそう</p>
+
+<p>編集すると自動でテストを走らせてくれて、mac アプリのgrowl みたいな通知もしてくれる</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="https://github.com/guard/guard">guard/guard &ndash; GitHub</a></li>
+<li><a href="https://github.com/guard/guard-rspec">guard/guard-rspec &ndash; GitHub</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[preview タスクにlivereload を追加]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/10/auto-watch-livereload/"/>
+    <updated>2014-03-10T01:30:23+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/10/auto-watch-livereload</id>
+    <content type="html"><![CDATA[<p>Rakefile にあるpreview タスクを編集して<br />
+python-livereload が起動するようにしてみた。</p>
+
+<p>これでrake preview だけで、livereload も一緒に起動するように。</p>
+
+<h2>Rakefile の編集</h2>
+
+<p>Rakefile の79行目近辺の、proccess を作ってるコードに<br />
+livereload を加えてみた。</p>
+
+<p>Rake ってなんだろう。しらべてみよう。</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://microblog.anthonyestebe.com/2013-11-20/live-reload-with-octopress/">live reload with octopress</a></li>
+<li><a href="http://www.kyobashi.org/hf/RakeUserGuide/?AboutRakeUserGuide">RakeUserGuide &ndash; Rake ユーザガイド</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[octpress with livereload]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/09/octpress-with-livereload/"/>
+    <updated>2014-03-09T06:14:40+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/09/octpress-with-livereload</id>
+    <content type="html"><![CDATA[<p>新規ポストの編集・確認作業を楽に。</p>
+
+<p>Google Chrome のlivereload がサーバを見つけられないとか<br />
+guard-livereload がUbuntu では動いてくれないとか(調査不足<br />
+いろいろ詰まるところがあったけど<br />
+python 版のlivereload をインストールしたら動いてくれた</p>
+
+<h2>python-livereload のインストール</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>$cd ~
+</span><span class='line'>$git clone https://github.com/lepture/python-livereload.git
+</span><span class='line'>$cd python-livereload
+</span><span class='line'>$sudo python setup.py install
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>easy_install やpip でのインストールでも可。<br /></p>
+
+<h2>起動させる</h2>
+
+<p>インストールが終わると、livereload コマンドが使えるようになるので<br />
+livereload に監視対象のフォルダ(静的ページが生成されるフォルダ)をただ渡してあげればOK.<br />
+教えなくてもカレントフォルダ直下を監視対象に動いてくれる。</p>
+
+<p>あとはOctpress のpreview コマンドと、Chrome 拡張のlivereload をオンにするだけ。</p>
+
+<h3>Chrome</h3>
+
+<p>あ そうだ、拡張機能の設定にある、「ファイルの URL へのアクセスを許可する」をオンにしておかないとうごかないよ。</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://livereload.readthedocs.org/en/latest/index.html">LiveReload — Python LiveReload 2.0.0 documentation</a></li>
+<li><a href="https://pypi.python.org/pypi/livereload">livereload 2.1.0 : Python Package Index</a></li>
+<li><a href="http://livereload.com/" title="CSS edits and image changes apply live. CoffeeScript, SASS, LESS and others just work.">LiveReload</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[sinatra with rspec]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/09/sinatra-with-rspec/"/>
+    <updated>2014-03-09T03:03:27+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/09/sinatra-with-rspec</id>
+    <content type="html"><![CDATA[<p>簡単なsinatra アプリを通して、アプリの&#8217;/&lsquo; にアクセスした時に、</p>
+
+<ul>
+<li>アクセスできているか(HTTP 200 をもらえるか)</li>
+<li>Hello って返事をもらえるか</li>
+</ul>
+
+
+<p>をRSpec を利用してテストしてみる。</p>
+
+<!-- more -->
+
+
+<h2>セットアップ</h2>
+
+<h3>必要なファイルを用意する</h3>
+
+<p>ターミナルでごにょごにょ</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>$cd ~
+</span><span class='line'>$mkcd sinatra_with_rspec
+</span><span class='line'>$bundle init
+</span><span class='line'>$echo gem \&quot;rspec\&quot; &gt;&gt; Gemfile
+</span><span class='line'>$echo gem \&quot;sinatra\&quot; &gt;&gt; Gemfile
+</span><span class='line'>$touch main.rb
+</span><span class='line'>$touch spec/main_spec.rb
+</span><span class='line'>$bundle
+</span><span class='line'>$rspec --init
+</span><span class='line'>$tree .
+</span><span class='line'>.
+</span><span class='line'>├── Gemfile
+</span><span class='line'>├── Gemfile.lock
+</span><span class='line'>├── main.rb
+</span><span class='line'>└── spec
+</span><span class='line'>    ├── main_spec.rb
+</span><span class='line'>    └── spec_helper.rb
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>テストの準備</h3>
+
+<p>テスト前の、必要最低限なコードはこんなかんじに。</p>
+
+<p>rspec/main_spec.rb にはこんなふうに動いてもらいたいという表題をつけている<br />
+(it xxxx の部分)</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># main.rb</span>
+</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;bundle&#39;</span>
+</span><span class='line'><span class="no">Bundler</span><span class="o">.</span><span class="n">require</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">MyApp</span> <span class="o">&lt;</span> <span class="ss">Sinatra</span><span class="p">:</span><span class="ss">:Base</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># rspec/main_spec.rb</span>
+</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;spec_helper&#39;</span>
+</span><span class='line'><span class="n">require_relative</span> <span class="s1">&#39;../main&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">set</span> <span class="ss">:environment</span><span class="p">,</span> <span class="ss">:test</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">describe</span> <span class="s2">&quot;MyApp&quot;</span> <span class="k">do</span>
+</span><span class='line'>  <span class="kp">include</span> <span class="ss">Rack</span><span class="p">:</span><span class="ss">:Test</span><span class="o">::</span><span class="no">Methods</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">app</span>
+</span><span class='line'>    <span class="c1">#Sinatra::Application</span>
+</span><span class='line'>    <span class="no">MyApp</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">describe</span> <span class="s2">&quot;Response Test&quot;</span> <span class="k">do</span>
+</span><span class='line'>    <span class="n">context</span> <span class="s2">&quot;when accessing &#39;/&#39;&quot;</span> <span class="k">do</span>
+</span><span class='line'>      <span class="n">it</span> <span class="s1">&#39;should be get &quot;Hello&quot;&#39;</span>
+</span><span class='line'>      <span class="n">it</span> <span class="s1">&#39;should be get OK&#39;</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>それと、spec/spec_helper.rb にはrequire &lsquo;rack/test&rsquo; を追記した。</p>
+
+<h2>テストのテスト</h2>
+
+<p>ここまでで、テストを走らせる準備はできたので、テストを実行してみよう</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>$rspec spec/main_spec.rb
+</span><span class='line'>Run options: include {:focus=&gt;true}
+</span><span class='line'>
+</span><span class='line'>All examples were filtered out; ignoring {:focus=&gt;true}
+</span><span class='line'>**
+</span><span class='line'>
+</span><span class='line'>Pending:
+</span><span class='line'>  MyApp Response Test when accessing &#39;/&#39; should be get &quot;Hello&quot;
+</span><span class='line'>    # Not yet implemented
+</span><span class='line'>    # ./spec/main_spec.rb:16
+</span><span class='line'>  MyApp Response Test when accessing &#39;/&#39; should be get OK
+</span><span class='line'>    # Not yet implemented
+</span><span class='line'>    # ./spec/main_spec.rb:17
+</span><span class='line'>
+</span><span class='line'>Finished in 0.00044 seconds
+</span><span class='line'>2 examples, 0 failures, 2 pending
+</span><span class='line'>
+</span><span class='line'>Randomized with seed 15081
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>7 &ndash; 13 行目に注目。これからテストしていく項目がrspec に認識されて、Pending な状態としてリストアップされている</p>
+
+<p>あと、テスト内容が自動で文章になっている点にも注目。</p>
+
+<h2>テスト内容を書く</h2>
+
+<h3>失敗するテストを書く</h3>
+
+<p>実際に、テストできるようテスト内容を実装していく</p>
+
+<p>sinatra アプリのルートにアクセスした時の期待する動作として以下のようになってほしいというのを、コードにも同様に書き下していく</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;spec_helper&#39;</span>
+</span><span class='line'><span class="n">require_relative</span> <span class="s1">&#39;../main&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">set</span> <span class="ss">:environment</span><span class="p">,</span> <span class="ss">:test</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">describe</span> <span class="s2">&quot;MyApp&quot;</span> <span class="k">do</span>
+</span><span class='line'>  <span class="kp">include</span> <span class="ss">Rack</span><span class="p">:</span><span class="ss">:Test</span><span class="o">::</span><span class="no">Methods</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">app</span>
+</span><span class='line'>    <span class="c1">#Sinatra::Application</span>
+</span><span class='line'>    <span class="no">MyApp</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">describe</span> <span class="s2">&quot;Response Test&quot;</span> <span class="k">do</span>
+</span><span class='line'>    <span class="n">context</span> <span class="s2">&quot;when accessing &#39;/&#39;&quot;</span> <span class="k">do</span>
+</span><span class='line'>      <span class="n">it</span> <span class="s1">&#39;should be get &quot;Hello&quot;&#39;</span> <span class="k">do</span>
+</span><span class='line'>        <span class="n">get</span> <span class="s1">&#39;/&#39;</span>
+</span><span class='line'>        <span class="n">last_response</span><span class="o">.</span><span class="n">body</span><span class="o">.</span><span class="n">should</span> <span class="n">eq</span> <span class="s1">&#39;Hello&#39;</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>      <span class="n">it</span> <span class="s1">&#39;should be get OK&#39;</span> <span class="k">do</span>
+</span><span class='line'>        <span class="n">get</span> <span class="s1">&#39;/&#39;</span>
+</span><span class='line'>        <span class="n">last_response</span><span class="o">.</span><span class="n">should</span> <span class="n">be_ok</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>では、テストを走らせてみよう</p>
+
+<p>失敗するに決まってる？ それは本当に？</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>rspec spec/main_spec.rb
+</span><span class='line'>Run options: include {:focus=&gt;true}
+</span><span class='line'>
+</span><span class='line'>Finished in 0.02286 seconds
+</span><span class='line'>2 examples, 2 failures
+</span><span class='line'>
+</span><span class='line'>Failed examples:
+</span><span class='line'>
+</span><span class='line'>rspec ./spec/main_spec.rb:16 # MyApp Response Test when accessing &#39;/&#39; should be get &quot;Hello&quot;
+</span><span class='line'>rspec ./spec/main_spec.rb:20 # MyApp Response Test when accessing &#39;/&#39; should be get OK
+</span><span class='line'>
+</span><span class='line'>Randomized with seed 41435
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>無事、テストは失敗に終わった。<br />
+RSpec がエラーで止まることもなく<strong>無事にすべてのテストを完了し、失敗するテストがあることを教えてくれた。構文エラーもない、問題なし！</strong></p>
+
+<p>ああっ、肝心のmain.rb にはまだ何も書いていなかった。そうだった。
+では、次に進もう</p>
+
+<h2>テストにパスするコードを書く</h2>
+
+<p>テストにどんなふうに動いて欲しいかというのを、ラベル付けもしたし、コードに書き下しもした</p>
+
+<p>テストにパスするよう、main.rb にコードを書いて、テストを走らせてみよう</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;bundler&#39;</span>
+</span><span class='line'><span class="no">Bundler</span><span class="o">.</span><span class="n">require</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">MyApp</span> <span class="o">&lt;</span> <span class="ss">Sinatra</span><span class="p">:</span><span class="ss">:Base</span>
+</span><span class='line'>  <span class="n">get</span> <span class="s1">&#39;/&#39;</span> <span class="k">do</span>
+</span><span class='line'>    <span class="s1">&#39;Hello&#39;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>rspec spec/main_spec.rb
+</span><span class='line'>Run options: include {:focus=&gt;true}
+</span><span class='line'>
+</span><span class='line'>All examples were filtered out; ignoring {:focus=&gt;true}
+</span><span class='line'>..
+</span><span class='line'>
+</span><span class='line'>Finished in 0.0226 seconds
+</span><span class='line'>2 examples, 0 failures
+</span><span class='line'>
+</span><span class='line'>Randomized with seed 9802
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>失敗するテストはなくなって、すべてのテストは問題なく通過した！ オールグリーン！ やったね！</p>
+
+<h2>蛇足</h2>
+
+<p>こんなかんじで、テストと実装を積み重ねていけば、安心してコードを書いていけそう。</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://www.sinatrarb.com/testing.html">Testing Sinatra with Rack::Test</a> (RSpec の項を参照)</li>
+<li><a href="http://betterspecs.org/jp/">Better Specs { rspec guidelines with ruby }</a></li>
+<li><a href="http://www.charlescurley.com/blog/articles/mkcd_mkdir_foo____cd_foo/index.html">mkcd: mkdir foo &amp;&amp; cd foo | Charles Curley&rsquo;s Weblog</a></li>
+<li><a href="http://www.limemo.net/blog/2013/08/%E3%80%90ubuntu%E3%80%91%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E6%A7%8B%E9%80%A0%E3%82%92%E8%A6%8B%E3%82%84%E3%81%99%E3%81%8F%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E3%80%8Ctree%E3%80%8D.html">Linuxブログ : 【Ubuntu】ディレクトリ構造を見やすく表示する「tree」コマンドの使い方</a></li>
 </ul>
 
 ]]></content>
@@ -116,6 +643,93 @@ rake preview にはrake watch の機能もあるので、プレビューしな�
 <ul>
 <li>そういえばカテゴリーの設定って[ ]で括ってカンマ区切りなのね</li>
 <li>テーマを切り替えたのはいいけれど、レイアウト変更とか細かな設定をまだ読んでないや</li>
+    <title type="html"><![CDATA[haskell tutorial links]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/08/haskell-tutorial-links/"/>
+    <updated>2014-03-08T08:01:48+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/08/haskell-tutorial-links</id>
+    <content type="html"><![CDATA[<p>まだ読み始めたばかりだけど<br />
+&ldquo;Two Dozen Short Lessons in Haskell&rdquo; がすごく丁寧に書かれてる<br />
+もしかしてプログラミングしたことないひとでも始められるかもわかんない</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://www.cs.ou.edu/~rlpage/fpclassCurrent/textbook/haskell.shtml">Two Dozen Short Lessons in Haskell</a></li>
+<li><a href="http://mymemo.weby117.com/develop/haskell/haskell_1.html">Haskell 入門に役立つサイト | サイト運営の私的メモ</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[tweet plugin]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/08/tweet-plugin/"/>
+    <updated>2014-03-08T03:03:46+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/08/tweet-plugin</id>
+    <content type="html"><![CDATA[<p>以下のように貼り付けると、Tweet の埋め込み表示をしてくれる<br />
+(※バックスラッシュは埋め込み処理のエスケープのために追記している)</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>\{\% tweet https://twitter.com/innocent_zero/status/441994818189668352 %}
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<div class='embed tweet'><blockquote class="twitter-tweet"><p>Twitter が用意してくれてる長い長いコピペコード貼り付けるより プラグインで発言元URL 貼り付けるだけで済むのはよい。</p>&mdash; iz (@innocent_zero) <a href="https://twitter.com/innocent_zero/statuses/441994818189668352">March 7, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+
+<p>ただ、データを取得する live_response の部分にバグがあるみたい。
+(いまのTwitter の仕様に合ってない?)</p>
+
+<p>本家のコードそのままだと動かないので<br />
+fork されたリポジトリのコードを利用するといいかも。</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="https://github.com/scottwb/jekyll-tweet-tag">jekyll-tweet-tag &ndash; GitHub</a></li>
+<li><a href="https://github.com/scottwb/jekyll-tweet-tag/network/members">scottwb/jekyll-tweet-tag network members &ndash; GitHub</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Haskell でFizzBuzz]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/08/fizzbuzz-if-haskell/"/>
+    <updated>2014-03-08T02:16:25+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/08/fizzbuzz-if-haskell</id>
+    <content type="html"><![CDATA[<p>まだ ぜんぜん わからない。&#8221;おまじない&#8221;、呪文を唱えてるかんじ。</p>
+
+<div><script src='https://gist.github.com/9415629.js'></script>
+<noscript><pre><code>toStr :: Int -&gt; String
+toStr x = if x `mod` 15 == 0 then &quot;FizzBuzz&quot;
+          else if x `mod` 3 == 0 then &quot;Fizz&quot;
+          else if x `mod` 5 == 0 then &quot;Buzz&quot;
+          else show x
+fizzbuzz :: Int -&gt; [String]
+fizzbuzz n = map toStr[1 .. n]
+
+main = do
+  print (fizzbuzz 15)
+
+-- output: [&quot;1&quot;,&quot;2&quot;,&quot;Fizz&quot;,&quot;4&quot;,&quot;Buzz&quot;,&quot;Fizz&quot;,&quot;7&quot;,&quot;8&quot;,&quot;Fizz&quot;,&quot;Buzz&quot;,&quot;11&quot;,&quot;Fizz&quot;,&quot;13&quot;,&quot;14&quot;,&quot;FizzBuzz&quot;]</code></pre></noscript></div>
+
+
+<hr />
+
+<div class='embed tweet'><blockquote class="twitter-tweet"><p>呪文に見えるのは正しい感覚ですね。魔法はまず呪文を覚えるところから。:p RT <a href="https://twitter.com/innocent_zero">@innocent_zero</a>: まずHaskell の構文が呪文に見えているので なんとか ならない、かな&#8230;</p>&mdash; Nobuo Yamashita (@nobsun) <a href="https://twitter.com/nobsun/statuses/441363913972539392">March 6, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+
+<p>ちょっとずつ、やっていこう。</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://www.geocities.jp/m_hiroi/func/haskell.html#begin">M.Hiroi&rsquo;s Home Page / Haskell Programming&#8217;</a></li>
 </ul>
 
 ]]></content>
@@ -158,7 +772,67 @@ rake preview にはrake watch の機能もあるので、プレビューしな�
 <p><img src="http://gyazo.com/73340b50de97fb67ff0648d68a37bf7e.png" alt="Publishing generated _deploy website" /></p>
 
 <p>調べてみたら、git用の鍵じゃなくって、~/ssh/id_rsaの方を使ってたみたいなので、~/.ssh/config に設定を記述して、正しく通信できるようにしとく。</p>
+    <title type="html"><![CDATA[コードの複雑度を測る]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/07/flog/"/>
+    <updated>2014-03-07T11:22:15+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/07/flog</id>
+    <content type="html"><![CDATA[<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">puts</span> <span class="s1">&#39;Hello Flog!&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
 
+
+<p>たとえば、このコードを計測してもらうとこんなかんじの出力をしてくれる</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>$flog code.rb
+</span><span class='line'>     1.0: flog total
+</span><span class='line'>     1.0: flog/method average
+</span><span class='line'>
+</span><span class='line'>     1.0: main#none
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>数値が高いほど読みづらい複雑なコードで、シンプルなコードだと低い数値が出る。</p>
+
+<ul>
+<li><a href="https://gist.github.com/gouf/8432898">gouf/8432898 &ndash; Gist</a></li>
+</ul>
+
+
+<p>みたいな ひどいコードだと<br />
+Total 189.9 っていう高めの数値が出る。<br />
+(そういえば別の言語で測る機会があって 数値が４ケタに届きそうなのを見た憶えが)</p>
+
+<p>コードの複雑度って読んだらわかるものだけど<br />
+各メソッドの複雑度やリファクタリングしていく中でその経過とか<br />
+そこまで把握していくのはむつかしい。</p>
+
+<p>数値として出せるので、継続的インテグレーションなるものとか<br />
+コードの健康度を測るログとして保存して<br />
+グラフにして可視化していくとか<br />
+コードを読まない人にも見てもらえる、共通の指標がつくっていける</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="https://github.com/seattlerb/flog">seattlerb/flog &ndash; GitHub</a></li>
+<li><a href="http://ruby.sadi.st/Ruby_Sadist.html">Confessions of a Ruby Sadist</a></li>
+<li><a href="https://github.com/sentientmonkey/vim-flog">sentientmonkey/vim-flog &ndash; GitHub</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[bashmarks]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/07/bashmarks/"/>
+    <updated>2014-03-07T10:21:08+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/07/bashmarks</id>
+    <content type="html"><![CDATA[<h2>セットアップ後</h2>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -197,6 +871,82 @@ rake preview にはrake watch の機能もあるので、プレビューしな�
 </li>
 </ul>
 
+</pre></td><td class='code'><pre><code class=''><span class='line'>s &lt;bookmark_name&gt; - Saves the current directory as "bookmark_name"
+</span><span class='line'>g &lt;bookmark_name&gt; - Goes (cd) to the directory associated with "bookmark_name"
+</span><span class='line'>p &lt;bookmark_name&gt; - Prints the directory associated with "bookmark_name"
+</span><span class='line'>d &lt;bookmark_name&gt; - Deletes the bookmark
+</span><span class='line'>l                 - Lists all available bookmarks</span></code></pre></td></tr></table></div></figure>
+
+
+<p>上のコマンドが追加されて、ディレクトリをブックマークできるようになる<br />
+pushd/popd よりべんり。</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="https://github.com/huyng/bashmarks">huyng/bashmarks &ndash; GitHub</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octpress Themes]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/06/octpress-themes/"/>
+    <updated>2014-03-06T23:54:46+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/06/octpress-themes</id>
+    <content type="html"><![CDATA[<h2>Octpress のテーマを変更する</h2>
+
+<p>デフォルトのテーマがあんまり好きじゃないので、よさそなのに変える。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd octopress
+</span><span class='line'>$ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/slash
+</span><span class='line'>$ rake install['slash']
+</span><span class='line'>$ rake generate</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://zespia.tw/Octopress-Theme-Slash/">Slash — a minimal theme for Octopress</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[禁断のForce Push]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/06/forbidden-force-push/"/>
+    <updated>2014-03-06T23:43:33+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/06/forbidden-force-push</id>
+    <content type="html"><![CDATA[<p>結果としてはリポジトリのデータも、歴史も全て無かったことになった</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>! [rejected]        master -&gt; master (non-fast-forward)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>rake deploy でエラーが出てpush できない。
+<del>何も考えずに</del>以下の解決方法、&#8221;+&ldquo; をつけるやつ、試しちゃった。</p>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress">rake gen_deploy rejected in Octopress &ndash; Stack Overflow</a></li>
+</ul>
+
+
+<p>よいこのみんなは 真似しちゃダメよ。ぜったい。<br />
+pull したりmerge したり 正攻法で攻めましょうね。</p>
+
+<p>ちょうどいい機会だった。ほんとに。<br />
+泣いてない。</p>
+
+<p>過去の記事も歴史もまっさらにして<br />
+さあ、これから更新していきましょう</p>
+
+<p>(これをもし お仕事で やらかしたらと思うと&hellip;)</p>
 ]]></content>
   </entry>
   
@@ -206,6 +956,42 @@ rake preview にはrake watch の機能もあるので、プレビューしな�
     <updated>2012-10-13T00:30:00+09:00</updated>
     <id>http://gouf.github.com/blog/2012/10/13/test</id>
     <content type="html"><![CDATA[
+    <title type="html"><![CDATA[Octpress をアップデートした]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/06/upgrade-octpress/"/>
+    <updated>2014-03-06T23:00:37+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/06/upgrade-octpress</id>
+    <content type="html"><![CDATA[<p>記事としての内容とか、実際の作業とかは以下のリンクまま。</p>
+
+<ul>
+<li><a href="http://blog.glidenote.com/blog/2014/02/14/octopress-update/">Octopressをアップデートした &ndash; Glide Note &ndash; グライドノート</a></li>
+</ul>
+
+
+<p>git remote 叩いてもoctopress とかなかったので
+git remote add してからgit fetch してみた。</p>
+
+<p>こういうときにmerge をするのね。</p>
+
+<h2>バージョン違い</h2>
+
+<p>ローカルにインストールされているrake のバージョンが<br />
+Octopress のmaster ブランチで利用されているものより新しかったので<br />
+ただrake とコマンドを叩いただけでは動いてくれなかった<br />
+エラーメッセージのヒントにしたがってbundle exec を頭につけることで対応</p>
+
+<h3>蛇足</h3>
+
+<p>久しぶりの更新。というよりは忘れ去っていた。<br />
+当時は今よりもなお わからないこと塗れだったのだろうけど<br />
+Octopress のセットアップと最初のポストするまでくらいは書いて欲しいよね<br />
+カテゴリの付け方とか、記事の書き方・プレビューとか確認するの時間かかったよ&hellip;</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://octopress.org/docs/">Octopress Documentation</a></li>
+<li><a href="http://octopress.org/docs/blogging/">Octopress Documentation &ndash; Blogging Basics</a></li>
+</ul>
 ]]></content>
   </entry>
   

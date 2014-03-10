@@ -1,0 +1,343 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My Octopress Blog</title>
+	<meta name="author" content="Gou Furuya">
+
+	
+	<meta name="description" content="Octpress のテーマを変更する デフォルトのテーマがあんまり好きじゃないので、よさそなのに変える。 1
+2
+3
+4
+$ cd octopress
+$ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/ &hellip;">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script async="true" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+</head>
+
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">My Octopress Blog</a></h1>
+<nav id="main-nav"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="http://google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:gouf.github.io">
+			</form>
+		</div>
+	</div>
+</nav>
+<nav id="sub-nav" class="alignright">
+	<div class="social">
+		
+		
+		
+		<a class="twitter" href="http://twitter.com/innocent_zero" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/gouf" title="GitHub">GitHub</a>
+		
+    
+		
+		
+		
+		
+		<a class="delicious" href="http://delicious.com/innocent.zero" title="Delicious">Delicious</a>
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+    
+	</div>
+	<form class="search" action="http://google.com/search" method="get">
+		<input class="alignright" type="text" name="q" results="0">
+		<input type="hidden" name="q" value="site:gouf.github.io">
+	</form>
+</nav>
+
+</header>
+	
+		
+	
+	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/03/06/octpress-themes/">
+		
+			Octpress Themes</a>
+	</h2>
+	<div class="entry-content">
+		<h2>Octpress のテーマを変更する</h2>
+
+<p>デフォルトのテーマがあんまり好きじゃないので、よさそなのに変える。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd octopress
+</span><span class='line'>$ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/slash
+</span><span class='line'>$ rake install['slash']
+</span><span class='line'>$ rake generate</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://zespia.tw/Octopress-Theme-Slash/">Slash — a minimal theme for Octopress</a></li>
+</ul>
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-06T23:54:46+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/octpress/'>Octpress</a>
+
+
+</div>
+	
+	<div class="comments"><a href="/blog/2014/03/06/octpress-themes/#disqus_thread">Comments</a></div>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/03/06/forbidden-force-push/">
+		
+			禁断のForce Push</a>
+	</h2>
+	<div class="entry-content">
+		<p>結果としてはリポジトリのデータも、歴史も全て無かったことになった</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>! [rejected]        master -&gt; master (non-fast-forward)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>rake deploy でエラーが出てpush できない。
+<del>何も考えずに</del>以下の解決方法、&#8221;+&ldquo; をつけるやつ、試しちゃった。</p>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress">rake gen_deploy rejected in Octopress &ndash; Stack Overflow</a></li>
+</ul>
+
+
+<p>よいこのみんなは 真似しちゃダメよ。ぜったい。<br />
+pull したりmerge したり 正攻法で攻めましょうね。</p>
+
+<p>ちょうどいい機会だった。ほんとに。<br />
+泣いてない。</p>
+
+<p>過去の記事も歴史もまっさらにして<br />
+さあ、これから更新していきましょう</p>
+
+<p>(これをもし お仕事で やらかしたらと思うと&hellip;)</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-06T23:43:33+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/octpress/'>Octpress</a>, <a class='category' href='/blog/categories/git/'>git</a>
+
+
+</div>
+	
+	<div class="comments"><a href="/blog/2014/03/06/forbidden-force-push/#disqus_thread">Comments</a></div>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/03/06/upgrade-octpress/">
+		
+			Octpress をアップデートした</a>
+	</h2>
+	<div class="entry-content">
+		<p>記事としての内容とか、実際の作業とかは以下のリンクまま。</p>
+
+<ul>
+<li><a href="http://blog.glidenote.com/blog/2014/02/14/octopress-update/">Octopressをアップデートした &ndash; Glide Note &ndash; グライドノート</a></li>
+</ul>
+
+
+<p>git remote 叩いてもoctopress とかなかったので
+git remote add してからgit fetch してみた。</p>
+
+<p>こういうときにmerge をするのね。</p>
+
+<h2>バージョン違い</h2>
+
+<p>ローカルにインストールされているrake のバージョンが<br />
+Octopress のmaster ブランチで利用されているものより新しかったので<br />
+ただrake とコマンドを叩いただけでは動いてくれなかった<br />
+エラーメッセージのヒントにしたがってbundle exec を頭につけることで対応</p>
+
+<h3>蛇足</h3>
+
+<p>久しぶりの更新。というよりは忘れ去っていた。<br />
+当時は今よりもなお わからないこと塗れだったのだろうけど<br />
+Octopress のセットアップと最初のポストするまでくらいは書いて欲しいよね<br />
+カテゴリの付け方とか、記事の書き方・プレビューとか確認するの時間かかったよ&hellip;</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://octopress.org/docs/">Octopress Documentation</a></li>
+<li><a href="http://octopress.org/docs/blogging/">Octopress Documentation &ndash; Blogging Basics</a></li>
+</ul>
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-06T23:00:37+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/octopress/'>Octopress</a>, <a class='category' href='/blog/categories/git/'>git</a>
+
+
+</div>
+	
+	<div class="comments"><a href="/blog/2014/03/06/upgrade-octpress/#disqus_thread">Comments</a></div>
+	
+</div>
+</article>
+
+<nav id="pagenavi">
+    
+        <a href="/" class="prev">Prev</a>
+    
+    
+    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
+</nav></div>
+	<footer id="footer" class="inner">Copyright &copy; 2014
+
+    Gou Furuya
+
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'goufgithubcom';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//go.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-35556958-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+</body>
+</html>

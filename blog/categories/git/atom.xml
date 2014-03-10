@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Octopress | My Octopress Blog]]></title>
-  <link href="http://gouf.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <title><![CDATA[Category: git | My Octopress Blog]]></title>
+  <link href="http://gouf.github.io/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://gouf.github.io/"/>
   <updated>2014-03-10T09:29:51+09:00</updated>
   <id>http://gouf.github.io/</id>
@@ -14,12 +14,36 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Octpress をアップデートした]]></title>
-    <link href="http://gouf.github.io/blog/2014/03/06/upgrade-octpress/"/>
-    
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+    <title type="html"><![CDATA[禁断のForce Push]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/06/forbidden-force-push/"/>
+    <updated>2014-03-06T23:43:33+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/06/forbidden-force-push</id>
+    <content type="html"><![CDATA[<p>結果としてはリポジトリのデータも、歴史も全て無かったことになった</p>
 
+<p><code>
+! [rejected]        master -&gt; master (non-fast-forward)
+</code></p>
+
+<p>rake deploy でエラーが出てpush できない。
+<del>何も考えずに</del>以下の解決方法、"+&ldquo; をつけるやつ、試しちゃった。</p>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress">rake gen_deploy rejected in Octopress &ndash; Stack Overflow</a></li>
+</ul>
+
+
+<p>よいこのみんなは 真似しちゃダメよ。ぜったい。<br />
+pull したりmerge したり 正攻法で攻めましょうね。</p>
+
+<p>ちょうどいい機会だった。ほんとに。<br />
+泣いてない。</p>
+
+<p>過去の記事も歴史もまっさらにして<br />
+さあ、これから更新していきましょう</p>
+
+<p>(これをもし お仕事で やらかしたらと思うと&hellip;)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octpress をアップデートした]]></title>
@@ -39,7 +63,6 @@ git remote add してからgit fetch してみた。</p>
 <p>こういうときにmerge をするのね。</p>
 
 <h2>バージョン違い</h2>
-
 
 <p>ローカルにインストールされているrake のバージョンが<br />
 Octopress のmaster ブランチで利用されているものより新しかったので<br />

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
+<<<<<<< HEAD
   <title><![CDATA[Category: LiveReload | gouf.github.com]]></title>
   <link href="http://gouf.github.com/blog/categories/livereload/atom.xml" rel="self"/>
   <link href="http://gouf.github.com/"/>
@@ -8,12 +9,22 @@
   <id>http://gouf.github.com/</id>
   <author>
     <name><![CDATA[gouf]]></name>
+=======
+  <title><![CDATA[Category: livereload | My Octopress Blog]]></title>
+  <link href="http://gouf.github.io/blog/categories/livereload/atom.xml" rel="self"/>
+  <link href="http://gouf.github.io/"/>
+  <updated>2014-03-10T09:29:51+09:00</updated>
+  <id>http://gouf.github.io/</id>
+  <author>
+    <name><![CDATA[Gou Furuya]]></name>
+>>>>>>> github
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
+<<<<<<< HEAD
     <title type="html"><![CDATA[LiveReloadで簡単プレビュー]]></title>
     <link href="http://gouf.github.com/blog/2012/10/13/auto-reload/"/>
     <updated>2012-10-13T15:34:00+09:00</updated>
@@ -76,6 +87,75 @@ rake preview にはrake watch の機能もあるので、プレビューしな�
 <li>(これだからYAMLはいやなんだ...!!)</li>
 </ul>
 </li>
+=======
+    <title type="html"><![CDATA[preview タスクにlivereload を追加]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/10/auto-watch-livereload/"/>
+    <updated>2014-03-10T01:30:23+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/10/auto-watch-livereload</id>
+    <content type="html"><![CDATA[<p>Rakefile にあるpreview タスクを編集して<br />
+python-livereload が起動するようにしてみた。</p>
+
+<p>これでrake preview だけで、livereload も一緒に起動するように。</p>
+
+<h2>Rakefile の編集</h2>
+
+<p>Rakefile の79行目近辺の、proccess を作ってるコードに<br />
+livereload を加えてみた。</p>
+
+<p>Rake ってなんだろう。しらべてみよう。</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://microblog.anthonyestebe.com/2013-11-20/live-reload-with-octopress/">live reload with octopress</a></li>
+<li><a href="http://www.kyobashi.org/hf/RakeUserGuide/?AboutRakeUserGuide">RakeUserGuide &ndash; Rake ユーザガイド</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[octpress with livereload]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/09/octpress-with-livereload/"/>
+    <updated>2014-03-09T06:14:40+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/09/octpress-with-livereload</id>
+    <content type="html"><![CDATA[<p>新規ポストの編集・確認作業を楽に。</p>
+
+<p>Google Chrome のlivereload がサーバを見つけられないとか<br />
+guard-livereload がUbuntu では動いてくれないとか(調査不足<br />
+いろいろ詰まるところがあったけど<br />
+python 版のlivereload をインストールしたら動いてくれた</p>
+
+<h2>python-livereload のインストール</h2>
+
+<p><code>text
+$cd ~
+$git clone https://github.com/lepture/python-livereload.git
+$cd python-livereload
+$sudo python setup.py install
+</code></p>
+
+<p>easy_install やpip でのインストールでも可。<br /></p>
+
+<h2>起動させる</h2>
+
+<p>インストールが終わると、livereload コマンドが使えるようになるので<br />
+livereload に監視対象のフォルダ(静的ページが生成されるフォルダ)をただ渡してあげればOK.<br />
+教えなくてもカレントフォルダ直下を監視対象に動いてくれる。</p>
+
+<p>あとはOctpress のpreview コマンドと、Chrome 拡張のlivereload をオンにするだけ。</p>
+
+<h3>Chrome</h3>
+
+<p>あ そうだ、拡張機能の設定にある、「ファイルの URL へのアクセスを許可する」をオンにしておかないとうごかないよ。</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="http://livereload.readthedocs.org/en/latest/index.html">LiveReload — Python LiveReload 2.0.0 documentation</a></li>
+<li><a href="https://pypi.python.org/pypi/livereload">livereload 2.1.0 : Python Package Index</a></li>
+<li><a href="http://livereload.com/" title="CSS edits and image changes apply live. CoffeeScript, SASS, LESS and others just work.">LiveReload</a></li>
+>>>>>>> github
 </ul>
 
 ]]></content>
