@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://gouf.github.io/atom.xml" rel="self"/>
   <link href="http://gouf.github.io/"/>
-  <updated>2014-03-10T01:41:56+09:00</updated>
+  <updated>2014-03-10T09:29:51+09:00</updated>
   <id>http://gouf.github.io/</id>
   <author>
     <name><![CDATA[Gou Furuya]]></name>
@@ -12,6 +12,105 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[practice for rspec]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/10/practice-for-rspec/"/>
+    <updated>2014-03-10T09:12:04+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/10/practice-for-rspec</id>
+    <content type="html"><![CDATA[<p>コード書くのと、RSpec のれんしゅう。<br />
+このループの総テスト数を保証するテストをひとつ書いてもいいかも</p>
+
+<p>眠くて回らないアタマで書いたっていう言い訳はのこしておく</p>
+
+<div class='embed tweet'><blockquote class="twitter-tweet"><p>やべー、ボーッとしてたら世紀の大発見した！！！&#10;一の位と十の位が違う二桁の値を用意する。&#10;その値の、一の位と十の位を入れ換えた値を元の値から引き算する。&#10;そうして出てきた答えは必ず9で割れる！！！</p>&mdash; てんき (@tenki_y) <a href="https://twitter.com/tenki_y/statuses/442670690517266433">March 9, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+
+
+
+<div><script src='https://gist.github.com/9457227.js'></script>
+<noscript><pre><code>require &#39;spec_helper&#39;
+
+describe &quot;always divisible by 9&quot; do
+  (1..100).each do |x|
+    first = x.to_s[0]
+    last  = x.to_s[1]
+    next if first == last
+    next if first.nil? or last.nil?
+    swap_x = (last + first).to_i
+    new_x = (x - swap_x).abs
+    it &quot;is #{x}: #{new_x} / 9 is 0&quot; do
+      result = new_x % 9
+      expect(result).to eq 0
+    end
+  end
+end</code></pre></noscript></div>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>Finished in 0.00749 seconds
+</span><span class='line'>82 examples, 0 failures
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[guard でテストを自動実行]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/10/guard-rspec/"/>
+    <updated>2014-03-10T02:02:22+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/10/guard-rspec</id>
+    <content type="html"><![CDATA[<p>Web 上のチュートリアルを通して<br />
+「最初の一歩」くらいはテストのやり方がわかったような、そうじゃないような。</p>
+
+<ul>
+<li>テストを書いて</li>
+<li>コマンド叩いてテストを走らせて</li>
+<li>テストに沿ったコードを実装して</li>
+<li>コマンド叩いてテストを走らせて</li>
+</ul>
+
+
+<p>っていう流れだけど、やっぱりコマンド叩いてテストを走らせるの、めんどう。</p>
+
+<h2>Guard で監視・テスト実行</h2>
+
+<h3>インストール</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>$echo gem \&#39;guard-rspec\&#39;, require: false &gt;&gt; Gemfile
+</span><span class='line'>$bundle
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>初期化・実行</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>$guard init rspec
+</span><span class='line'>$guard
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>初期化後に監視対象を設定するファイル Guardfile が生成される<br />
+細かな設定とかはこれを編集すれば良さそう</p>
+
+<p>編集すると自動でテストを走らせてくれて、mac アプリのgrowl みたいな通知もしてくれる</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="https://github.com/guard/guard">guard/guard &ndash; GitHub</a></li>
+<li><a href="https://github.com/guard/guard-rspec">guard/guard-rspec &ndash; GitHub</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[preview タスクにlivereload を追加]]></title>

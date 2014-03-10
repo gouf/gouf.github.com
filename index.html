@@ -7,8 +7,8 @@
 	<meta name="author" content="Gou Furuya">
 
 	
-	<meta name="description" content="Rakefile にあるpreview タスクを編集して
-python-livereload が起動するようにしてみた。 これでrake preview だけで、livereload も一緒に起動するように。 Rakefile の編集 Rakefile の79行目近辺の、proccess &hellip;">
+	<meta name="description" content="コード書くのと、RSpec のれんしゅう。
+このループの総テスト数を保証するテストをひとつ書いてもいいかも 眠くて回らないアタマで書いたっていう言い訳はのこしておく やべー、ボーッとしてたら世紀の大発見した！！！&#10;一の位と十の位が違う二桁の値を用意する。&#10;その値の、 &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -81,6 +81,173 @@ python-livereload が起動するようにしてみた。 これでrake preview 
 		
 	
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/03/10/practice-for-rspec/">
+		
+			Practice for Rspec</a>
+	</h2>
+	<div class="entry-content">
+		<p>コード書くのと、RSpec のれんしゅう。<br />
+このループの総テスト数を保証するテストをひとつ書いてもいいかも</p>
+
+<p>眠くて回らないアタマで書いたっていう言い訳はのこしておく</p>
+
+<div class='embed tweet'><blockquote class="twitter-tweet"><p>やべー、ボーッとしてたら世紀の大発見した！！！&#10;一の位と十の位が違う二桁の値を用意する。&#10;その値の、一の位と十の位を入れ換えた値を元の値から引き算する。&#10;そうして出てきた答えは必ず9で割れる！！！</p>&mdash; てんき (@tenki_y) <a href="https://twitter.com/tenki_y/statuses/442670690517266433">March 9, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+
+
+
+<div><script src='https://gist.github.com/9457227.js'></script>
+<noscript><pre><code>require &#39;spec_helper&#39;
+
+describe &quot;always divisible by 9&quot; do
+  (1..100).each do |x|
+    first = x.to_s[0]
+    last  = x.to_s[1]
+    next if first == last
+    next if first.nil? or last.nil?
+    swap_x = (last + first).to_i
+    new_x = (x - swap_x).abs
+    it &quot;is #{x}: #{new_x} / 9 is 0&quot; do
+      result = new_x % 9
+      expect(result).to eq 0
+    end
+  end
+end</code></pre></noscript></div>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>Finished in 0.00749 seconds
+</span><span class='line'>82 examples, 0 failures
+</span></code></pre></td></tr></table></div></figure>
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-10T09:12:04+09:00" pubdate data-updated="true">Mar 10<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/rspec/'>rspec</a>
+
+
+</div>
+	
+	<div class="comments"><a href="/blog/2014/03/10/practice-for-rspec/#disqus_thread">Comments</a></div>
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/03/10/guard-rspec/">
+		
+			Guard でテストを自動実行</a>
+	</h2>
+	<div class="entry-content">
+		<p>Web 上のチュートリアルを通して<br />
+「最初の一歩」くらいはテストのやり方がわかったような、そうじゃないような。</p>
+
+<ul>
+<li>テストを書いて</li>
+<li>コマンド叩いてテストを走らせて</li>
+<li>テストに沿ったコードを実装して</li>
+<li>コマンド叩いてテストを走らせて</li>
+</ul>
+
+
+<p>っていう流れだけど、やっぱりコマンド叩いてテストを走らせるの、めんどう。</p>
+
+<h2>Guard で監視・テスト実行</h2>
+
+<h3>インストール</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>$echo gem \&#39;guard-rspec\&#39;, require: false &gt;&gt; Gemfile
+</span><span class='line'>$bundle
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>初期化・実行</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='text'><span class='line'>$guard init rspec
+</span><span class='line'>$guard
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>初期化後に監視対象を設定するファイル Guardfile が生成される<br />
+細かな設定とかはこれを編集すれば良さそう</p>
+
+<p>編集すると自動でテストを走らせてくれて、mac アプリのgrowl みたいな通知もしてくれる</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="https://github.com/guard/guard">guard/guard &ndash; GitHub</a></li>
+<li><a href="https://github.com/guard/guard-rspec">guard/guard-rspec &ndash; GitHub</a></li>
+</ul>
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-10T02:02:22+09:00" pubdate data-updated="true">Mar 10<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/guard/'>guard</a>, <a class='category' href='/blog/categories/rspec/'>rspec</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>
+
+
+</div>
+	
+	<div class="comments"><a href="/blog/2014/03/10/guard-rspec/#disqus_thread">Comments</a></div>
+	
+</div>
+</article>
 
 
     <article class="post">
@@ -625,134 +792,6 @@ pushd/popd よりべんり。</p>
 </div>
 	
 	<div class="comments"><a href="/blog/2014/03/07/bashmarks/#disqus_thread">Comments</a></div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2014/03/06/octpress-themes/">
-		
-			Octpress Themes</a>
-	</h2>
-	<div class="entry-content">
-		<h2>Octpress のテーマを変更する</h2>
-
-<p>デフォルトのテーマがあんまり好きじゃないので、よさそなのに変える。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd octopress
-</span><span class='line'>$ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/slash
-</span><span class='line'>$ rake install['slash']
-</span><span class='line'>$ rake generate</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Link</h2>
-
-<ul>
-<li><a href="http://zespia.tw/Octopress-Theme-Slash/">Slash — a minimal theme for Octopress</a></li>
-</ul>
-
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-03-06T23:54:46+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2014</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/octpress/'>Octpress</a>
-
-
-</div>
-	
-	<div class="comments"><a href="/blog/2014/03/06/octpress-themes/#disqus_thread">Comments</a></div>
-	
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2014/03/06/forbidden-force-push/">
-		
-			禁断のForce Push</a>
-	</h2>
-	<div class="entry-content">
-		<p>結果としてはリポジトリのデータも、歴史も全て無かったことになった</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>! [rejected]        master -&gt; master (non-fast-forward)</span></code></pre></td></tr></table></div></figure>
-
-
-<p>rake deploy でエラーが出てpush できない。
-<del>何も考えずに</del>以下の解決方法、&#8221;+&ldquo; をつけるやつ、試しちゃった。</p>
-
-<ul>
-<li><a href="http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress">rake gen_deploy rejected in Octopress &ndash; Stack Overflow</a></li>
-</ul>
-
-
-<p>よいこのみんなは 真似しちゃダメよ。ぜったい。<br />
-pull したりmerge したり 正攻法で攻めましょうね。</p>
-
-<p>ちょうどいい機会だった。ほんとに。<br />
-泣いてない。</p>
-
-<p>過去の記事も歴史もまっさらにして<br />
-さあ、これから更新していきましょう</p>
-
-<p>(これをもし お仕事で やらかしたらと思うと&hellip;)</p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-03-06T23:43:33+09:00" pubdate data-updated="true">Mar 6<span>th</span>, 2014</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/octpress/'>Octpress</a>, <a class='category' href='/blog/categories/git/'>git</a>
-
-
-</div>
-	
-	<div class="comments"><a href="/blog/2014/03/06/forbidden-force-push/#disqus_thread">Comments</a></div>
 	
 </div>
 </article>

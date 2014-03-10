@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | My Octopress Blog]]></title>
   <link href="http://gouf.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://gouf.github.io/"/>
-  <updated>2014-03-10T01:41:56+09:00</updated>
+  <updated>2014-03-10T09:29:51+09:00</updated>
   <id>http://gouf.github.io/</id>
   <author>
     <name><![CDATA[Gou Furuya]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[guard でテストを自動実行]]></title>
+    <link href="http://gouf.github.io/blog/2014/03/10/guard-rspec/"/>
+    <updated>2014-03-10T02:02:22+09:00</updated>
+    <id>http://gouf.github.io/blog/2014/03/10/guard-rspec</id>
+    <content type="html"><![CDATA[<p>Web 上のチュートリアルを通して<br />
+「最初の一歩」くらいはテストのやり方がわかったような、そうじゃないような。</p>
+
+<ul>
+<li>テストを書いて</li>
+<li>コマンド叩いてテストを走らせて</li>
+<li>テストに沿ったコードを実装して</li>
+<li>コマンド叩いてテストを走らせて</li>
+</ul>
+
+
+<p>っていう流れだけど、やっぱりコマンド叩いてテストを走らせるの、めんどう。</p>
+
+<h2>Guard で監視・テスト実行</h2>
+
+<h3>インストール</h3>
+
+<p><code>text
+$echo gem \'guard-rspec\', require: false &gt;&gt; Gemfile
+$bundle
+</code></p>
+
+<h3>初期化・実行</h3>
+
+<p><code>text
+$guard init rspec
+$guard
+</code></p>
+
+<p>初期化後に監視対象を設定するファイル Guardfile が生成される<br />
+細かな設定とかはこれを編集すれば良さそう</p>
+
+<p>編集すると自動でテストを走らせてくれて、mac アプリのgrowl みたいな通知もしてくれる</p>
+
+<h2>Link</h2>
+
+<ul>
+<li><a href="https://github.com/guard/guard">guard/guard &ndash; GitHub</a></li>
+<li><a href="https://github.com/guard/guard-rspec">guard/guard-rspec &ndash; GitHub</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[コードの複雑度を測る]]></title>
