@@ -1,0 +1,2255 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title/>
+    <description/>
+    <link/>
+    <pubDate>2014-10-03</pubDate>
+    <item>
+      <title>03</title>
+      <link>/tmp/blog/2014/03</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;h1&gt;Archive for
+  
+    Mar 2014
+  
+&lt;/h1&gt;
+
+
+&lt;ul&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/07/bashmarks.html"&gt;bashmarks&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/06/octpress-themes.html"&gt;Octpress Themes&lt;/a&gt; &lt;span&gt;Mar  6&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/06/forbidden-force-push.html"&gt;&#x7981;&#x65AD;&#x306E;Force Push&lt;/a&gt; &lt;span&gt;Mar  6&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/06/upgrade-octpress.html"&gt;Octpress &#x3092;&#x30A2;&#x30C3;&#x30D7;&#x30C7;&#x30FC;&#x30C8;&#x3057;&#x305F;&lt;/a&gt; &lt;span&gt;Mar  6&lt;/span&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>06</title>
+      <link>/tmp/blog/2014/03/06</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;h1&gt;Archive for
+  
+    Mar  6 2014
+  
+&lt;/h1&gt;
+
+
+&lt;ul&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/06/octpress-themes.html"&gt;Octpress Themes&lt;/a&gt; &lt;span&gt;Mar  6&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/06/forbidden-force-push.html"&gt;&#x7981;&#x65AD;&#x306E;Force Push&lt;/a&gt; &lt;span&gt;Mar  6&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/06/upgrade-octpress.html"&gt;Octpress &#x3092;&#x30A2;&#x30C3;&#x30D7;&#x30C7;&#x30FC;&#x30C8;&#x3057;&#x305F;&lt;/a&gt; &lt;span&gt;Mar  6&lt;/span&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>07</title>
+      <link>/tmp/blog/2014/03/07</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;h1&gt;Archive for
+  
+    Mar  7 2014
+  
+&lt;/h1&gt;
+
+
+&lt;ul&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/07/bashmarks.html"&gt;bashmarks&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>08</title>
+      <link>/tmp/blog/2014/03/08</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;h1&gt;Archive for
+  
+    Mar  8 2014
+  
+&lt;/h1&gt;
+
+
+&lt;ul&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>09</title>
+      <link>/tmp/blog/2014/03/09</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;h1&gt;Archive for
+  
+    Mar  9 2014
+  
+&lt;/h1&gt;
+
+
+&lt;ul&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>10</title>
+      <link>/tmp/blog/2014/03/10</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;h1&gt;Archive for
+  
+    Mar 10 2014
+  
+&lt;/h1&gt;
+
+
+&lt;ul&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>2014</title>
+      <link>/tmp/blog/2014</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;h1&gt;Archive for
+  
+    2014
+  
+&lt;/h1&gt;
+
+
+&lt;ul&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/07/bashmarks.html"&gt;bashmarks&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/06/octpress-themes.html"&gt;Octpress Themes&lt;/a&gt; &lt;span&gt;Mar  6&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/06/forbidden-force-push.html"&gt;&#x7981;&#x65AD;&#x306E;Force Push&lt;/a&gt; &lt;span&gt;Mar  6&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/06/upgrade-octpress.html"&gt;Octpress &#x3092;&#x30A2;&#x30C3;&#x30D7;&#x30C7;&#x30FC;&#x30C8;&#x3057;&#x305F;&lt;/a&gt; &lt;span&gt;Mar  6&lt;/span&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>Auto Watch Livereload</title>
+      <link>/tmp/blog/2014/03/10/auto-watch-livereload</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title - preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;p&gt;Rakefile &#x306B;&#x3042;&#x308B;preview &#x30BF;&#x30B9;&#x30AF;&#x3092;&#x7DE8;&#x96C6;&#x3057;&#x3066;&lt;br /&gt;
+python-livereload &#x304C;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x307F;&#x305F;&#x3002;&lt;/p&gt;
+
+&lt;p&gt;&#x3053;&#x308C;&#x3067;rake preview &#x3060;&#x3051;&#x3067;&#x3001;livereload &#x3082;&#x4E00;&#x7DD2;&#x306B;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x3002;&lt;/p&gt;
+
+&lt;h2 id="rakefile-"&gt;Rakefile &#x306E;&#x7DE8;&#x96C6;&lt;/h2&gt;
+
+&lt;p&gt;Rakefile &#x306E;79&#x884C;&#x76EE;&#x8FD1;&#x8FBA;&#x306E;&#x3001;proccess &#x3092;&#x4F5C;&#x3063;&#x3066;&#x308B;&#x30B3;&#x30FC;&#x30C9;&#x306B;&lt;br /&gt;
+livereload &#x3092;&#x52A0;&#x3048;&#x3066;&#x307F;&#x305F;&#x3002;&lt;/p&gt;
+
+&lt;p&gt;Rake &#x3063;&#x3066;&#x306A;&#x3093;&#x3060;&#x308D;&#x3046;&#x3002;&#x3057;&#x3089;&#x3079;&#x3066;&#x307F;&#x3088;&#x3046;&#x3002;&lt;/p&gt;
+
+&lt;h2 id="link"&gt;Link&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://microblog.anthonyestebe.com/2013-11-20/live-reload-with-octopress/"&gt;live reload with octopress&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.kyobashi.org/hf/RakeUserGuide/?AboutRakeUserGuide"&gt;RakeUserGuide - Rake &#x30E6;&#x30FC;&#x30B6;&#x30AC;&#x30A4;&#x30C9;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>Bash</title>
+      <link>/tmp/blog/tags/bash</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;h1&gt;Articles tagged 'bash'&lt;/h1&gt;
+
+
+&lt;ul&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/07/bashmarks.html"&gt;bashmarks&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>Bashmarks</title>
+      <link>/tmp/blog/2014/03/07/bashmarks</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title - bashmarks&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;h2 id="section"&gt;&#x30BB;&#x30C3;&#x30C8;&#x30A2;&#x30C3;&#x30D7;&#x5F8C;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;
+s &amp;lt;bookmark_name&amp;gt; - Saves the current directory as "bookmark_name"
+g &amp;lt;bookmark_name&amp;gt; - Goes (cd) to the directory associated with "bookmark_name"
+p &amp;lt;bookmark_name&amp;gt; - Prints the directory associated with "bookmark_name"
+d &amp;lt;bookmark_name&amp;gt; - Deletes the bookmark
+l                 - Lists all available bookmarks
+&lt;/code&gt;
+&#x4E0A;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x304C;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x3066;&#x3001;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x30D6;&#x30C3;&#x30AF;&#x30DE;&#x30FC;&#x30AF;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&lt;br /&gt;
+pushd/popd &#x3088;&#x308A;&#x3079;&#x3093;&#x308A;&#x3002;&lt;/p&gt;
+
+&lt;h2 id="link"&gt;Link&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/huyng/bashmarks"&gt;huyng/bashmarks - GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>Fizzbuzz If Haskell</title>
+      <link>/tmp/blog/2014/03/08/fizzbuzz-if-haskell</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title - Haskell &#x3067;FizzBuzz&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;p&gt;&#x307E;&#x3060; &#x305C;&#x3093;&#x305C;&#x3093; &#x308F;&#x304B;&#x3089;&#x306A;&#x3044;&#x3002;"&#x304A;&#x307E;&#x3058;&#x306A;&#x3044;"&#x3001;&#x546A;&#x6587;&#x3092;&#x5531;&#x3048;&#x3066;&#x308B;&#x304B;&#x3093;&#x3058;&#x3002;&lt;/p&gt;
+
+&lt;p&gt;{% gist 9415629 %}&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;{% tweetnocache https://twitter.com/nobsun/statuses/441363913972539392 %}&lt;/p&gt;
+
+&lt;p&gt;&#x3061;&#x3087;&#x3063;&#x3068;&#x305A;&#x3064;&#x3001;&#x3084;&#x3063;&#x3066;&#x3044;&#x3053;&#x3046;&#x3002;&lt;/p&gt;
+
+&lt;h2 id="link"&gt;Link&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.geocities.jp/m_hiroi/func/haskell.html#begin"&gt;M.Hiroi's Home Page / Haskell Programming'&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>Flog</title>
+      <link>/tmp/blog/2014/03/07/flog</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title - &#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;p&gt;&lt;code&gt;ruby
+puts 'Hello Flog!'
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&#x305F;&#x3068;&#x3048;&#x3070;&#x3001;&#x3053;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x8A08;&#x6E2C;&#x3057;&#x3066;&#x3082;&#x3089;&#x3046;&#x3068;&#x3053;&#x3093;&#x306A;&#x304B;&#x3093;&#x3058;&#x306E;&#x51FA;&#x529B;&#x3092;&#x3057;&#x3066;&#x304F;&#x308C;&#x308B;&lt;/p&gt;
+
+&lt;p&gt;```text
+$flog code.rb
+     1.0: flog total
+     1.0: flog/method average&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; 1.0: main#none ```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&#x6570;&#x5024;&#x304C;&#x9AD8;&#x3044;&#x307B;&#x3069;&#x8AAD;&#x307F;&#x3065;&#x3089;&#x3044;&#x8907;&#x96D1;&#x306A;&#x30B3;&#x30FC;&#x30C9;&#x3067;&#x3001;&#x30B7;&#x30F3;&#x30D7;&#x30EB;&#x306A;&#x30B3;&#x30FC;&#x30C9;&#x3060;&#x3068;&#x4F4E;&#x3044;&#x6570;&#x5024;&#x304C;&#x51FA;&#x308B;&#x3002;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://gist.github.com/gouf/8432898"&gt;gouf/8432898 - Gist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&#x307F;&#x305F;&#x3044;&#x306A; &#x3072;&#x3069;&#x3044;&#x30B3;&#x30FC;&#x30C9;&#x3060;&#x3068;&lt;br /&gt;
+Total 189.9 &#x3063;&#x3066;&#x3044;&#x3046;&#x9AD8;&#x3081;&#x306E;&#x6570;&#x5024;&#x304C;&#x51FA;&#x308B;&#x3002;&lt;br /&gt;
+(&#x305D;&#x3046;&#x3044;&#x3048;&#x3070;&#x5225;&#x306E;&#x8A00;&#x8A9E;&#x3067;&#x6E2C;&#x308B;&#x6A5F;&#x4F1A;&#x304C;&#x3042;&#x3063;&#x3066; &#x6570;&#x5024;&#x304C;&#xFF14;&#x30B1;&#x30BF;&#x306B;&#x5C4A;&#x304D;&#x305D;&#x3046;&#x306A;&#x306E;&#x3092;&#x898B;&#x305F;&#x61B6;&#x3048;&#x304C;)&lt;/p&gt;
+
+&lt;p&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3063;&#x3066;&#x8AAD;&#x3093;&#x3060;&#x3089;&#x308F;&#x304B;&#x308B;&#x3082;&#x306E;&#x3060;&#x3051;&#x3069;&lt;br /&gt;
+&#x5404;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3084;&#x30EA;&#x30D5;&#x30A1;&#x30AF;&#x30BF;&#x30EA;&#x30F3;&#x30B0;&#x3057;&#x3066;&#x3044;&#x304F;&#x4E2D;&#x3067;&#x305D;&#x306E;&#x7D4C;&#x904E;&#x3068;&#x304B;&lt;br /&gt;
+&#x305D;&#x3053;&#x307E;&#x3067;&#x628A;&#x63E1;&#x3057;&#x3066;&#x3044;&#x304F;&#x306E;&#x306F;&#x3080;&#x3064;&#x304B;&#x3057;&#x3044;&#x3002;&lt;/p&gt;
+
+&lt;p&gt;&#x6570;&#x5024;&#x3068;&#x3057;&#x3066;&#x51FA;&#x305B;&#x308B;&#x306E;&#x3067;&#x3001;&#x7D99;&#x7D9A;&#x7684;&#x30A4;&#x30F3;&#x30C6;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306A;&#x308B;&#x3082;&#x306E;&#x3068;&#x304B;&lt;br /&gt;
+&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x5065;&#x5EB7;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&#x30ED;&#x30B0;&#x3068;&#x3057;&#x3066;&#x4FDD;&#x5B58;&#x3057;&#x3066;&lt;br /&gt;
+&#x30B0;&#x30E9;&#x30D5;&#x306B;&#x3057;&#x3066;&#x53EF;&#x8996;&#x5316;&#x3057;&#x3066;&#x3044;&#x304F;&#x3068;&#x304B;&lt;br /&gt;
+&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x8AAD;&#x307E;&#x306A;&#x3044;&#x4EBA;&#x306B;&#x3082;&#x898B;&#x3066;&#x3082;&#x3089;&#x3048;&#x308B;&#x3001;&#x5171;&#x901A;&#x306E;&#x6307;&#x6A19;&#x304C;&#x3064;&#x304F;&#x3063;&#x3066;&#x3044;&#x3051;&#x308B;&lt;/p&gt;
+
+&lt;h2 id="link"&gt;Link&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/seattlerb/flog"&gt;seattlerb/flog - GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://ruby.sadi.st/Ruby_Sadist.html"&gt;Confessions of a Ruby Sadist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/sentientmonkey/vim-flog"&gt;sentientmonkey/vim-flog - GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>Flog</title>
+      <link>/tmp/blog/tags/flog</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;h1&gt;Articles tagged 'flog'&lt;/h1&gt;
+
+
+&lt;ul&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>Forbidden Force Push</title>
+      <link>/tmp/blog/2014/03/06/forbidden-force-push</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title - &#x7981;&#x65AD;&#x306E;Force Push&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;p&gt;&#x7D50;&#x679C;&#x3068;&#x3057;&#x3066;&#x306F;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3082;&#x3001;&#x6B74;&#x53F2;&#x3082;&#x5168;&#x3066;&#x7121;&#x304B;&#x3063;&#x305F;&#x3053;&#x3068;&#x306B;&#x306A;&#x3063;&#x305F;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+! [rejected]        master -&amp;gt; master (non-fast-forward)
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;rake deploy &#x3067;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x51FA;&#x3066;push &#x3067;&#x304D;&#x306A;&#x3044;&#x3002;
+~~~&#x4F55;&#x3082;&#x8003;&#x3048;&#x305A;&#x306B;~~~&#x4EE5;&#x4E0B;&#x306E;&#x89E3;&#x6C7A;&#x65B9;&#x6CD5;&#x3001;"+" &#x3092;&#x3064;&#x3051;&#x308B;&#x3084;&#x3064;&#x3001;&#x8A66;&#x3057;&#x3061;&#x3083;&#x3063;&#x305F;&#x3002;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://stackoverflow.com/questions/17609453/rake-gen-deploy-rejected-in-octopress"&gt;rake gen_deploy rejected in Octopress - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&#x3088;&#x3044;&#x3053;&#x306E;&#x307F;&#x3093;&#x306A;&#x306F; &#x771F;&#x4F3C;&#x3057;&#x3061;&#x3083;&#x30C0;&#x30E1;&#x3088;&#x3002;&#x305C;&#x3063;&#x305F;&#x3044;&#x3002;&lt;br /&gt;
+pull &#x3057;&#x305F;&#x308A;merge &#x3057;&#x305F;&#x308A; &#x6B63;&#x653B;&#x6CD5;&#x3067;&#x653B;&#x3081;&#x307E;&#x3057;&#x3087;&#x3046;&#x306D;&#x3002;&lt;/p&gt;
+
+&lt;p&gt;&#x3061;&#x3087;&#x3046;&#x3069;&#x3044;&#x3044;&#x6A5F;&#x4F1A;&#x3060;&#x3063;&#x305F;&#x3002;&#x307B;&#x3093;&#x3068;&#x306B;&#x3002;&lt;br /&gt;
+&#x6CE3;&#x3044;&#x3066;&#x306A;&#x3044;&#x3002;&lt;/p&gt;
+
+&lt;p&gt;&#x904E;&#x53BB;&#x306E;&#x8A18;&#x4E8B;&#x3082;&#x6B74;&#x53F2;&#x3082;&#x307E;&#x3063;&#x3055;&#x3089;&#x306B;&#x3057;&#x3066;&lt;br /&gt;
+&#x3055;&#x3042;&#x3001;&#x3053;&#x308C;&#x304B;&#x3089;&#x66F4;&#x65B0;&#x3057;&#x3066;&#x3044;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&lt;/p&gt;
+
+&lt;p&gt;(&#x3053;&#x308C;&#x3092;&#x3082;&#x3057; &#x304A;&#x4ED5;&#x4E8B;&#x3067; &#x3084;&#x3089;&#x304B;&#x3057;&#x305F;&#x3089;&#x3068;&#x601D;&#x3046;&#x3068;&#x2026;)&lt;/p&gt;
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>/tmp/blog/tags/git</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;h1&gt;Articles tagged 'git'&lt;/h1&gt;
+
+
+&lt;ul&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/06/forbidden-force-push.html"&gt;&#x7981;&#x65AD;&#x306E;Force Push&lt;/a&gt; &lt;span&gt;Mar  6&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/06/upgrade-octpress.html"&gt;Octpress &#x3092;&#x30A2;&#x30C3;&#x30D7;&#x30C7;&#x30FC;&#x30C8;&#x3057;&#x305F;&lt;/a&gt; &lt;span&gt;Mar  6&lt;/span&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>Guard</title>
+      <link>/tmp/blog/tags/guard</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;h1&gt;Articles tagged 'guard'&lt;/h1&gt;
+
+
+&lt;ul&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>Guard Rspec</title>
+      <link>/tmp/blog/2014/03/10/guard-rspec</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title - guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;p&gt;Web &#x4E0A;&#x306E;&#x30C1;&#x30E5;&#x30FC;&#x30C8;&#x30EA;&#x30A2;&#x30EB;&#x3092;&#x901A;&#x3057;&#x3066;&lt;br /&gt;
+&#x300C;&#x6700;&#x521D;&#x306E;&#x4E00;&#x6B69;&#x300D;&#x304F;&#x3089;&#x3044;&#x306F;&#x30C6;&#x30B9;&#x30C8;&#x306E;&#x3084;&#x308A;&#x65B9;&#x304C;&#x308F;&#x304B;&#x3063;&#x305F;&#x3088;&#x3046;&#x306A;&#x3001;&#x305D;&#x3046;&#x3058;&#x3083;&#x306A;&#x3044;&#x3088;&#x3046;&#x306A;&#x3002;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x66F8;&#x3044;&#x3066;&lt;/li&gt;
+  &lt;li&gt;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x53E9;&#x3044;&#x3066;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x8D70;&#x3089;&#x305B;&#x3066;&lt;/li&gt;
+  &lt;li&gt;&#x30C6;&#x30B9;&#x30C8;&#x306B;&#x6CBF;&#x3063;&#x305F;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x5B9F;&#x88C5;&#x3057;&#x3066;&lt;/li&gt;
+  &lt;li&gt;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x53E9;&#x3044;&#x3066;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x8D70;&#x3089;&#x305B;&#x3066;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&#x3063;&#x3066;&#x3044;&#x3046;&#x6D41;&#x308C;&#x3060;&#x3051;&#x3069;&#x3001;&#x3084;&#x3063;&#x3071;&#x308A;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x53E9;&#x3044;&#x3066;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x8D70;&#x3089;&#x305B;&#x308B;&#x306E;&#x3001;&#x3081;&#x3093;&#x3069;&#x3046;&#x3002;&lt;/p&gt;
+
+&lt;h2 id="guard-"&gt;Guard &#x3067;&#x76E3;&#x8996;&#x30FB;&#x30C6;&#x30B9;&#x30C8;&#x5B9F;&#x884C;&lt;/h2&gt;
+
+&lt;h3 id="section"&gt;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;text
+$echo gem \'guard-rspec\', require: false &amp;gt;&amp;gt; Gemfile
+$bundle
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id="section-1"&gt;&#x521D;&#x671F;&#x5316;&#x30FB;&#x5B9F;&#x884C;&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;text
+$guard init rspec
+$guard
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&#x521D;&#x671F;&#x5316;&#x5F8C;&#x306B;&#x76E3;&#x8996;&#x5BFE;&#x8C61;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x30D5;&#x30A1;&#x30A4;&#x30EB; Guardfile &#x304C;&#x751F;&#x6210;&#x3055;&#x308C;&#x308B;&lt;br /&gt;
+&#x7D30;&#x304B;&#x306A;&#x8A2D;&#x5B9A;&#x3068;&#x304B;&#x306F;&#x3053;&#x308C;&#x3092;&#x7DE8;&#x96C6;&#x3059;&#x308C;&#x3070;&#x826F;&#x3055;&#x305D;&#x3046;&lt;/p&gt;
+
+&lt;p&gt;&#x7DE8;&#x96C6;&#x3059;&#x308B;&#x3068;&#x81EA;&#x52D5;&#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x8D70;&#x3089;&#x305B;&#x3066;&#x304F;&#x308C;&#x3066;&#x3001;mac &#x30A2;&#x30D7;&#x30EA;&#x306E;growl &#x307F;&#x305F;&#x3044;&#x306A;&#x901A;&#x77E5;&#x3082;&#x3057;&#x3066;&#x304F;&#x308C;&#x308B;&lt;/p&gt;
+
+&lt;h2 id="link"&gt;Link&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/guard/guard"&gt;guard/guard - GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/guard/guard-rspec"&gt;guard/guard-rspec - GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>Haskell</title>
+      <link>/tmp/blog/tags/haskell</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;h1&gt;Articles tagged 'haskell'&lt;/h1&gt;
+
+
+&lt;ul&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>Haskell Tutorial Links</title>
+      <link>/tmp/blog/2014/03/08/haskell-tutorial-links</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title - haskell tutorial links&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;p&gt;&#x307E;&#x3060;&#x8AAD;&#x307F;&#x59CB;&#x3081;&#x305F;&#x3070;&#x304B;&#x308A;&#x3060;&#x3051;&#x3069;&lt;br /&gt;
+"Two Dozen Short Lessons in Haskell" &#x304C;&#x3059;&#x3054;&#x304F;&#x4E01;&#x5BE7;&#x306B;&#x66F8;&#x304B;&#x308C;&#x3066;&#x308B;&lt;br /&gt;
+&#x3082;&#x3057;&#x304B;&#x3057;&#x3066;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x3057;&#x305F;&#x3053;&#x3068;&#x306A;&#x3044;&#x3072;&#x3068;&#x3067;&#x3082;&#x59CB;&#x3081;&#x3089;&#x308C;&#x308B;&#x304B;&#x3082;&#x308F;&#x304B;&#x3093;&#x306A;&#x3044;&lt;/p&gt;
+
+&lt;h2 id="link"&gt;Link&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.cs.ou.edu/~rlpage/fpclassCurrent/textbook/haskell.shtml"&gt;Two Dozen Short Lessons in Haskell&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;[Haskell &#x5165;&#x9580;&#x306B;&#x5F79;&#x7ACB;&#x3064;&#x30B5;&#x30A4;&#x30C8;&lt;/td&gt;
+          &lt;td&gt;&#x30B5;&#x30A4;&#x30C8;&#x904B;&#x55B6;&#x306E;&#x79C1;&#x7684;&#x30E1;&#x30E2;](http://mymemo.weby117.com/develop/haskell/haskell_1.html)&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>/tmp/blog/tags/linux</link>
+      <description>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' /&gt;
+    &lt;title&gt;Blog Title&lt;/title&gt;
+    &lt;link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;div id="main" role="main"&gt;
+      &lt;h1&gt;Articles tagged 'linux'&lt;/h1&gt;
+
+
+&lt;ul&gt;
+  
+    &lt;li&gt;&lt;a href="/blog/2014/03/07/bashmarks.html"&gt;bashmarks&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+
+    &lt;/div&gt;
+    
+    &lt;aside&gt;
+      &lt;h2&gt;Recent Articles&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/middleman_blogging.html"&gt;middleman blogging&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/practice-for-rspec.html"&gt;practice for rspec&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/guard-rspec.html"&gt;guard &#x3067;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x81EA;&#x52D5;&#x5B9F;&#x884C;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/10/auto-watch-livereload.html"&gt;preview &#x30BF;&#x30B9;&#x30AF;&#x306B;livereload &#x3092;&#x8FFD;&#x52A0;&lt;/a&gt; &lt;span&gt;Mar 10&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/octpress-with-livereload.html"&gt;octpress with livereload&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/09/sinatra-with-rspec.html"&gt;sinatra with rspec&lt;/a&gt; &lt;span&gt;Mar  9&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/haskell-tutorial-links.html"&gt;haskell tutorial links&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/tweet-plugin.html"&gt;tweet plugin&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/08/fizzbuzz-if-haskell.html"&gt;Haskell &#x3067;FizzBuzz&lt;/a&gt; &lt;span&gt;Mar  8&lt;/span&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014/03/07/flog.html"&gt;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x8907;&#x96D1;&#x5EA6;&#x3092;&#x6E2C;&#x308B;&lt;/a&gt; &lt;span&gt;Mar  7&lt;/span&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;Tags&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;octpress (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/plugin.html"&gt;plugin (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rake.html"&gt;rake (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/livereload.html"&gt;livereload (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/python.html"&gt;python (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/sinatra.html"&gt;sinatra (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/rspec.html"&gt;rspec (3)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octpress.html"&gt;Octpress (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/git.html"&gt;git (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/haskell.html"&gt;haskell (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/linux.html"&gt;linux (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/bash.html"&gt;bash (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/ruby.html"&gt;ruby (2)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/flog.html"&gt;flog (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/middleman.html"&gt;middleman (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/octopress.html"&gt;Octopress (1)&lt;/a&gt;&lt;/li&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/tags/guard.html"&gt;guard (1)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+
+      &lt;h2&gt;By Year&lt;/h2&gt;
+      &lt;ol&gt;
+        
+          &lt;li&gt;&lt;a href="/blog/2014.html"&gt;2014 (14)&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/aside&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+  </channel>
+</rss>

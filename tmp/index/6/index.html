@@ -1,0 +1,218 @@
+<div class="row-fluid">
+  <div class="span12">
+      <div class="tmp">
+        <h3 class="title"><a href="/tmp/blog/2014/03/06/octpress-themes">Octpress Themes</a> <span class="date"></span></h3>
+
+        <div class="summary ellipsis">
+
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+    <title>Blog Title - Octpress Themes</title>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml">
+  
+  
+    
+    <div id="main" role="main">
+      <h2 id="octpress-">Octpress のテーマを変更する</h2>
+
+<p>デフォルトのテーマがあんまり好きじゃないので、よさそなのに変える。</p>
+
+<p><code>
+$ cd octopress
+$ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/slash
+$ rake install['slash']
+$ rake generate
+</code></p>
+
+<h2 id="link">Link</h2>
+<ul>
+  <li><a href="http://zespia.tw/Octopress-Theme-Slash/">Slash — a minimal theme for Octopress</a></li>
+</ul>
+
+    </div>
+</div>
+
+        <div class="more">
+          <a href="/tmp/blog/2014/03/06/octpress-themes" class="btn btn-small">read more..</a>
+        </div>
+      </div>
+      <div class="tmp">
+        <h3 class="title"><a href="/tmp/blog/2014/03/09/octpress-with-livereload">Octpress With Livereload</a> <span class="date"></span></h3>
+
+        <div class="summary ellipsis">
+
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+    <title>Blog Title - octpress with livereload</title>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml">
+  
+  
+    
+    <div id="main" role="main">
+      <p>新規ポストの編集・確認作業を楽に。</p>
+
+<p>Google Chrome のlivereload がサーバを見つけられないとか<br>
+guard-livereload がUbuntu では動いてくれないとか(調査不足<br>
+いろいろ詰まるところがあったけど<br>
+python 版のlivereload をインストールしたら動いてくれた</p>
+
+<h2 id="python-livereload-">python-livereload のインストール</h2>
+
+<p><code>text
+$cd ~
+$git clone https://github.com/lepture/python-livereload.git
+$cd python-livereload
+$sudo python setup.py install
+</code></p>
+
+<p>easy_install やpip でのインストールでも可。<br></p>
+
+<h2 id="section">起動させる</h2>
+
+<p>インストールが終わると、livereload コマンドが使えるようになるので<br>
+livereload に監視対象のフォルダ(静的ページが生成されるフォルダ)をただ渡してあげればOK.<br>
+教えなくてもカレントフォルダ直下を監視対象に動いてくれる。</p>
+
+<p>あとはOctpress のpreview コマンドと、Chrome 拡張のlivereload をオンにするだけ。</p>
+
+<h3 id="chrome">Chrome</h3>
+
+<p>あ そうだ、拡張機能の設定にある、「ファイルの URL へのアクセスを許可する」をオンにしておかないとうごかないよ。</p>
+
+<h2 id="link">Link</h2>
+
+<ul>
+  <li><a href="http://livereload.readthedocs.org/en/latest/index.html">LiveReload — Python LiveReload 2.0.0 documentation</a></li>
+  <li><a href="https://pypi.python.org/pypi/livereload">livereload 2.1.0 : Python Package Index</a></li>
+  <li><a title="CSS edits and image changes apply live. CoffeeScript, SASS, LESS and others just work." href="http://livereload.com/">LiveReload</a></li>
+</ul>
+
+    </div>
+</div>
+
+        <div class="more">
+          <a href="/tmp/blog/2014/03/09/octpress-with-livereload" class="btn btn-small">read more..</a>
+        </div>
+      </div>
+      <div class="tmp">
+        <h3 class="title"><a href="/tmp/blog/tags/plugin">Plugin</a> <span class="date"></span></h3>
+
+        <div class="summary ellipsis">
+
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+    <title>Blog Title</title>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml">
+  
+  
+    
+    <div id="main" role="main">
+      <h1>Articles tagged 'plugin'</h1>
+
+
+<ul>
+  
+    <li>
+<a href="/blog/2014/03/08/tweet-plugin.html">tweet plugin</a> <span>Mar  8</span>
+</li>
+  
+</ul>
+
+
+    </div>
+</div>
+
+        <div class="more">
+          <a href="/tmp/blog/tags/plugin" class="btn btn-small">read more..</a>
+        </div>
+      </div>
+      <div class="tmp">
+        <h3 class="title"><a href="/tmp/blog/2014/03/10/practice-for-rspec">Practice For Rspec</a> <span class="date"></span></h3>
+
+        <div class="summary ellipsis">
+
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+    <title>Blog Title - practice for rspec</title>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml">
+  
+  
+    
+    <div id="main" role="main">
+      <p>コード書くのと、RSpec のれんしゅう。<br>
+このループの総テスト数を保証するテストをひとつ書いてもいいかも</p>
+
+<p>眠くて回らないアタマで書いたっていう言い訳はのこしておく</p>
+
+<p>{% tweet https://twitter.com/tenki_y/status/442670690517266433 %}</p>
+
+<p>{% gist gouf/9457227 %}</p>
+
+<p><code>text
+Finished in 0.00749 seconds
+82 examples, 0 failures
+</code></p>
+
+    </div>
+</div>
+
+        <div class="more">
+          <a href="/tmp/blog/2014/03/10/practice-for-rspec" class="btn btn-small">read more..</a>
+        </div>
+      </div>
+      <div class="tmp">
+        <h3 class="title"><a href="/tmp/blog/tags/python">Python</a> <span class="date"></span></h3>
+
+        <div class="summary ellipsis">
+
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+    <title>Blog Title</title>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/blog/feed.xml">
+  
+  
+    
+    <div id="main" role="main">
+      <h1>Articles tagged 'python'</h1>
+
+
+<ul>
+  
+    <li>
+<a href="/blog/2014/03/10/auto-watch-livereload.html">preview タスクにlivereload を追加</a> <span>Mar 10</span>
+</li>
+  
+    <li>
+<a href="/blog/2014/03/09/octpress-with-livereload.html">octpress with livereload</a> <span>Mar  9</span>
+</li>
+  
+</ul>
+
+
+    </div>
+</div>
+
+        <div class="more">
+          <a href="/tmp/blog/tags/python" class="btn btn-small">read more..</a>
+        </div>
+      </div>
+    
+    <div class="pagination">
+      <ul>
+          <li><a href="/tmp/index/1">1</a></li>
+          <li><a href="/tmp/index/2">2</a></li>
+          <li><a href="/tmp/index/3">3</a></li>
+          <li><a href="/tmp/index/4">4</a></li>
+          <li><a href="/tmp/index/5">5</a></li>
+          <li class="active"><a href="/tmp/index/6">6</a></li>
+          <li><a href="/tmp/index/7">7</a></li>
+          <li><a href="/tmp/index/8">8</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
