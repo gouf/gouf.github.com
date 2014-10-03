@@ -1,0 +1,57 @@
+---
+title: Blog
+---
+
+#header.container-fluid.page-header
+  h1 header
+
+.container
+  .row
+    .col-sm-2
+      p test, test
+    .col-sm-6
+      p style="background: silver;" test, test
+    .col-sm-4
+      p test, test
+main.container
+  ul.list-group
+    li.list-group-item
+      | Blog Articles Counts
+      span.badge = blog.articles.map{|x| x.title}.size
+  - for article in blog.articles
+    article.row
+      time = article.date
+      header
+        .title
+          h1
+            = link_to article.title, article.url
+        .date
+          = article.date.strftime('%b %e %Y')
+        .tags
+          |tags:&nbsp
+          = article.tags.join(', ')
+      .summary = article.summary
+.container
+  form
+    .form-group
+      label.control-label for="email" Email
+      input#email.form-control type="text" placeholder="email"
+
+    .form-group
+      input.btn.btn-primary type="submit" value="submit"
+
+.container
+  table.table.table-striped.table-bordered.table-hover
+    thead
+      tr
+        th ID
+        th Score
+    tbody
+      tr
+        td @a
+        td 120
+      tr
+        td @b
+        td 20
+#footer.container-fluid.page-footer
+  h1 footer

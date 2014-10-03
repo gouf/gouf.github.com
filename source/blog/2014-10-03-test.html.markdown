@@ -1,0 +1,15 @@
+---
+title: Test Article
+date: 2014-10-03 15:42 JST
+tags: test
+---
+
+# Hello!
+
+here is test article's body
+
+```ruby
+puts 'Hello World!'
+print 'Middleman'
+puts ' code syntax highlighting!'
+```
