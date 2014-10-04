@@ -67,8 +67,8 @@ activate :blog do |blog|
   # blog.sources = ":year-:month-:day-:title.html"
   # blog.taglink = "tags/:tag.html"
   blog.layout = 'layout'
-  # blog.summary_separator = /(READMORE)/
-  blog.summary_length = 250
+  blog.summary_separator = /(READMORE)/
+  blog.summary_length = 140
   # blog.year_link = ":year.html"
   # blog.month_link = ":year/:month.html"
   # blog.day_link = ":year/:month/:day.html"
@@ -100,7 +100,7 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"

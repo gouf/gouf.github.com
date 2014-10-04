@@ -20,3 +20,5 @@ gem 'redcarpet'
 gem 'middleman-syntax'
 
 gem 'nokogiri'
+
+gem 'sass'

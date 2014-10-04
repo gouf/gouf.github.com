@@ -1,0 +1,11 @@
+---
+title: test2
+date: 2014-10-04 21:25 JST
+tags: test
+---
+# Web ページの作成
+
+* Middleman
+* Bootstrap
+* Font Awesome
+* Slim
