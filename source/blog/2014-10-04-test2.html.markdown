@@ -21,8 +21,10 @@ Middleman を利用してページを作成してみたのでメモ。
 * [Bootstrap](http://getbootstrap.com/)
 * [pygments-css/github.css at master · richleland/pygments-css](https://github.com/richleland/pygments-css/blob/master/github.css シンタックスハイライト)
 
+### Web Font
 `@font-face`, `@import` で外部フォントの読み込み
 
+* [無料日本語ウェブフォントJapanSans](http://webfontfan.com/japansans/)
 * [Inconsolata - Google Fonts](https://www.google.com/fonts#UsePlace:use/Collection:Inconsolata)
 
 ## 記事リストの設定
