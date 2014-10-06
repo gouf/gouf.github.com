@@ -2,35 +2,27 @@
 title: Blog
 ---
 
-#header.container-fluid.page-header
-  .container
-    .row
-      .col-sm-11
-        h1 site title header
-      .col-sm-1
-        a href="http://github.com/gouf"
-          .fa.fa-github-square.fa-3x
 
-main.container
-  .container
-    .row
-      .col-sm-3
-        ul.list-group
-          li.list-group-item
-            | Blog Articles Counts
-            span.badge = blog.articles.map{|x| x.title}.size
-      .col-sm-9
-  .container.articles
-    - for article in blog.articles
-      article.row
-        header
-          .title.col-sm-10
-            h1
-              = link_to article.title, article.url
-          .tags.text-right
-            |tags:&nbsp
-            = article.tags.join(', ')
-          time.col-sm-1 = article.date.strftime('%b %e %Y')
-        .summary.col-sm-12 = article.summary
-#footer.container-fluid.page-footer
-  h1 footer
+.container
+  .row
+    .col-sm-3
+      ul.list-group
+        li.list-group-item
+          | Blog Articles Counts
+          span.badge = blog.articles.map{|x| x.title}.size
+    .col-sm-9
+.container.articles
+  - for article in blog.articles
+    article
+      header
+        .title
+          = link_to article.summary.lines.first, article.url
+          /= link_to article.title, article.url
+        .tags.text-right
+          |tags:&nbsp
+          = article.tags.join(', ')
+        time = article.date.strftime('%b %e %Y')
+      .container
+        .summary
+          p = article.body.to_s.lines[1..12].join
+        = (link_to 'read more...', article) if article.body.to_s.lines.size > 12

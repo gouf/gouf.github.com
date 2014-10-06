@@ -1,27 +1,57 @@
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+@font-face {
+  font-family: 'JapanSans80';
+  src: url('http://webfontfan.com/fontcss/font/JapanSans80.eot');
+  src: url('http://webfontfan.com/fontcss/font/JapanSans80.eot?#iefix') format('embedded-opentype'),
+  url('http://webfontfan.com/fontcss/font/JapanSans80.woff') format('woff'),
+  url('http://webfontfan.com/fontcss/font/JapanSans80.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 #header {
   background: url('/images/background.jpg');
   color: #FCFCFC;
 }
 
-.title {
-  background: rgba(230, 230, 230, 0.8);
-  padding: 5px;
+header > .title {
+  /*
+  box-shadow: 1px 2px 200px 3px #FBFBFB;
+  box-shadow: 1px 2px 200px 3px #AAA;
+  */
+  background: #EFEFEF;
+  box-shadow: 1px 2px 200px 3px #FBFBFB;
+  font-size: 3.0em;
+  margin-bottom: -28px;
+}
+header > .title > a {
+  display: block;
+  padding-top: 3px;
 }
 .summary {
-  background: rgba(220, 220, 220, 0.4);
+  border-top: 3px black;
 }
-div.articles {
-  background: rgba(220, 220, 220, 0.4);
+.summary h1 {
+  font-size: 0.9em;
+}
+.my-github > a {
+  position: absolute;
+  bottom: 0;
 }
 article {
-  box-shadow: 1px 1px 2px 3px #AAA;
+  box-shadow: 1px 1px 1px 0px #CCC;
   border-bottom: 1px solid #999;
-  border-right: 1px solid #AAA;
+  margin-top: 10px;
   margin-bottom: 5px;
+  background: rgba(250, 250, 250, 0.1);
 }
 div.highlight pre {
+  /*
   background: #DFDFDF;
   border: 1px solid #AAA;
+  */
+  background: #FFF;
+  border: 1px solid #CCC;
+  font-family: 'Inconsolata','JapanSans80','ヒラギノ角ゴ Pro W3','Hiragino Kaku  Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
 }
 .title, time, .tags, .summary {
   padding: 3px;
@@ -30,5 +60,7 @@ div.highlight pre {
 }
 
 body {
-  background: #AFAFAF;
+  background: #CFCFCF;
+  color: #444;
+  font-family:'JapanSans80','ヒラギノ角ゴ Pro W3','Hiragino Kaku  Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
 }

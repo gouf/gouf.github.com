@@ -9,7 +9,7 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"
 
     /! Use title if it's in the page YAML frontmatter
-    title == data.page.title || ''
+    title == 'Blog' + (data.page.title.empty? ? '' : " - #{data.page.title}")
 
     /== stylesheet_link_tag "normalize", "all"
     == stylesheet_link_tag 'github'
@@ -22,4 +22,15 @@ html
     == stylesheet_link_tag "layout.css"
 
   body
-    == yield
+    #header.container-fluid.page-header
+      .container
+        .row
+          .col-sm-11
+            h1 site title header
+          .col-sm-1.my-github
+            a href="http://github.com/gouf"
+              .fa.fa-github-square.fa-2x
+    main.container
+      == yield
+    #footer.container-fluid.page-footer
+      h1 footer
