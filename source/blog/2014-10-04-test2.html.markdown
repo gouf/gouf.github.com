@@ -1,11 +1,90 @@
 ---
-title: test2
+title: Web ページの作成
 date: 2014-10-04 21:25 JST
-tags: test
+tags: memo, middleman
 ---
 # Web ページの作成
+
+Middleman を利用してページを作成してみたのでメモ。
+
+## 利用したもの
 
 * Middleman
 * Bootstrap
 * Font Awesome
 * Slim
+
+## CSS まわり
+
+### 外部CSS の読み込み
+
+* [Bootstrap](http://getbootstrap.com/)
+* [pygments-css/github.css at master · richleland/pygments-css](https://github.com/richleland/pygments-css/blob/master/github.css シンタックスハイライト)
+
+`@font-face`, `@import` で外部フォントの読み込み
+
+* [Inconsolata - Google Fonts](https://www.google.com/fonts#UsePlace:use/Collection:Inconsolata)
+
+## 記事リストの設定
+
+**`layout.slim`**
+
+```slim
+.title
+  = link_to article.summary.lines.first, article.url
+```
+
+```slim
+.summary = article.summary.lines[1..-1].join
+```
+
+記事の最初の行をタイトルとして設定
+
+記事本文は最初の行を除いて表示している
+
+<br/>
+.summary はあとで新しい書き方に変更した
+
+```slim
+.summary
+  p = article.body.to_s.lines[1..12].join
+= (link_to('read more...', article)) if article.body.to_s.lines.size > 12
+```
+
+## そのほか
+
+### index ページ
+
+index ページの記事一覧はfor でblog.articles を回して一覧を生成している
+
+for じゃなくてeach の方を使いたいとおもったけど、つかってるのはRuby の構文じゃなくてSlim の構文っぽい。
+
+### blog.articles の要素
+#### 記事の内容がString 整形未済で保存されてる
+
+* [ActiveSupport::SafeBuffer](http://api.rubyonrails.org/classes/ActiveSupport/SafeBuffer.html)
+
+#### `article.source_file` でその記事のフルパスを取得できる
+
+記事のパスが取得できるから、コミットログが参照できたりする
+
+```ruby
+directory_path = '__my_blog_repository_path__'
+file_path = 'source/blog/2014-10-03-test.html.markdown'
+Dir.chdir(directory_path) do
+  git_log = `git log #{file_path}`
+  p git_log.lines.select{ |x| x.start_with?('Date:') }.join.chomp
+  # => "Date:   Sat Oct 4 02:00:04 2014 +0900"
+  p git_log.lines.select{ |x| x.start_with?('    ') }.map(&:strip).reject(&:empty?)
+  # => ["Middleman init", "Create test article"]
+  puts git_log
+  # =>
+  # commit b7e7c6587a6d42cc1583fa1c63f48ccf20e34f8a
+  # Author: gouf <innocent.zero@gmail.com>
+  # Date:   Sat Oct 4 02:00:04 2014 +0900
+  #
+  #     Middleman init
+  #
+  #     Create test article
+end
+```
