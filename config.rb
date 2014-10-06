@@ -41,9 +41,9 @@ require 'slim'
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -62,7 +62,7 @@ set :slim, pretty: true, sort_attrs: true, format: :html5
 
 # Blog
 activate :blog do |blog|
-  # blog.prefix = "blog"
+  blog.prefix = 'blog'
   # blog.permalink = ":year/:month/:day/:title.html"
   # blog.sources = ":year-:month-:day-:title.html"
   # blog.taglink = "tags/:tag.html"
@@ -81,7 +81,6 @@ activate :blog do |blog|
   # blog.per_page = 10
   blog.per_page = 12
   # blog.page_link = "page/:num"
-  blog.prefix = 'blog'
   # blog.permalink = '{year}/{month}/{day}/{title}.html'
   blog.permalink = '{year}/{month}/{title}.html'
   blog.page_link = 'p{num}'
