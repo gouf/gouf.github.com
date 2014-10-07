@@ -25,4 +25,5 @@ title: Blog
       .container
         .summary
           p = article.body.to_s.lines[1..12].join
-        = (link_to 'read more...', article) if article.body.to_s.lines.size > 12
+        .read-more
+          = (link_to 'read more...', article) if article.body.to_s.lines.size > 12

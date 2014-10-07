@@ -13,17 +13,21 @@
   color: #FCFCFC;
 }
 
+.read-more {
+  font-size: 1.5em;
+  text-align: right;
+  padding-right: 1.2em;
+}
+
 header > .title {
-  /*
+  background: #666;
   box-shadow: 1px 2px 200px 3px #FBFBFB;
   box-shadow: 1px 2px 200px 3px #AAA;
-  */
-  background: #EFEFEF;
-  box-shadow: 1px 2px 200px 3px #FBFBFB;
   font-size: 3.0em;
   margin-bottom: -28px;
 }
 header > .title > a {
+  color: #FAFAFA;
   display: block;
   padding-top: 3px;
 }
