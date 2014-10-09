@@ -22,3 +22,5 @@ gem 'middleman-syntax'
 gem 'nokogiri'
 
 gem 'sass'
+
+gem 'compass'
