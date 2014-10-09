@@ -24,6 +24,6 @@ title: Blog
         time = article.date.strftime('%b %e %Y')
       .container
         .summary
-          p = article.body.to_s.lines[1..12].join
+          p = article.summary.lines[1..-1].join
         .read-more
           = (link_to 'read more...', article) if article.body.to_s.lines.size > 12
