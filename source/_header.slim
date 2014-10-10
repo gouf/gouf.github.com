@@ -1,0 +1,20 @@
+meta charset="utf-8"
+
+/! Always force latest IE rendering engine or request Chrome Frame
+meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+
+meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"
+
+/! Use title if it's in the page YAML frontmatter
+title == 'Blog' + (data.page.title.empty? ? '' : " - #{data.page.title}")
+
+/== stylesheet_link_tag "normalize", "all"
+== stylesheet_link_tag 'github'
+== javascript_include_tag  "all"
+script src="https://code.jquery.com/jquery-2.1.1.min.js"
+link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"
+link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+/!link rel="stylesheet" href="layout.scss"
+link rel="shourtcut icon" href="/images/favicon.ico" type="image/x-icon"
+link rel="icon" href="/images/favicon.ico" type="image/x-icon"
