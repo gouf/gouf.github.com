@@ -17,7 +17,6 @@ title: Blog
       header
         .title
           = link_to article.summary.lines.first, article.url
-          /= link_to article.title, article.url
         .tags.text-right
           |tags:&nbsp
           = article.tags.join(', ')
