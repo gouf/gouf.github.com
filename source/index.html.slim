@@ -26,3 +26,11 @@ title: Blog
           p = article.summary.try{|x| x.lines }.try{|x| x[1..-1]}.try{|x| x.join }
         .read-more
           = (link_to 'read more...', article) if article.body.to_s.lines.size > 12
+.container
+  .tag-link.col-sm-11
+    span tags : {
+    - for tag in blog.tags
+      h5 = tag.first
+      - for article in tag.last
+        h6 = link_to article.summary.try{|x| x.lines }.try{|x| x[0]}.match(/>(.+)</).captures.first, article.url
+    span }
