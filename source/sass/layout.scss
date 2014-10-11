@@ -37,6 +37,12 @@ time, .read-more {
   text-align: right;
   //font-weight: thin;
   padding-right: 1.2em;
+  > a {
+    color: #154772;
+  }
+  > a:hover {
+    color: #428bca;
+  }
 }
 
 header {
