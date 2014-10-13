@@ -24,3 +24,5 @@ gem 'nokogiri'
 gem 'sass'
 
 gem 'compass'
+
+gem 'middleman-minify-html'
